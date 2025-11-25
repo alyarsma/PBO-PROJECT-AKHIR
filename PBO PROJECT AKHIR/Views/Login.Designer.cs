@@ -29,27 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            panel1 = new Panel();
             lbregister = new Label();
             lblogin = new Label();
             tbpassword = new TextBox();
             tbusername = new TextBox();
-            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.Controls.Add(lbregister);
-            panel1.Controls.Add(lblogin);
-            panel1.Controls.Add(tbpassword);
-            panel1.Controls.Add(tbusername);
-            panel1.Location = new Point(-1, 0);
-            panel1.Margin = new Padding(2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1920, 1080);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
             // 
             // lbregister
             // 
@@ -57,10 +41,9 @@
             lbregister.BackColor = Color.Navy;
             lbregister.Font = new Font("Poppins Medium", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbregister.ForeColor = Color.Transparent;
-            lbregister.Location = new Point(950, 559);
-            lbregister.Margin = new Padding(2, 0, 2, 0);
+            lbregister.Location = new Point(1310, 900);
             lbregister.Name = "lbregister";
-            lbregister.Size = new Size(116, 39);
+            lbregister.Size = new Size(163, 56);
             lbregister.TabIndex = 3;
             lbregister.Text = "Register";
             lbregister.Click += lbregister_Click;
@@ -71,10 +54,9 @@
             lblogin.BackColor = Color.Navy;
             lblogin.Font = new Font("Poppins Medium", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblogin.ForeColor = Color.Transparent;
-            lblogin.Location = new Point(962, 421);
-            lblogin.Margin = new Padding(2, 0, 2, 0);
+            lblogin.Location = new Point(1325, 679);
             lblogin.Name = "lblogin";
-            lblogin.Size = new Size(81, 39);
+            lblogin.Size = new Size(114, 56);
             lblogin.TabIndex = 2;
             lblogin.Text = "Login";
             lblogin.Click += lblogin_Click;
@@ -82,40 +64,40 @@
             // tbpassword
             // 
             tbpassword.BorderStyle = BorderStyle.None;
-            tbpassword.Location = new Point(816, 346);
-            tbpassword.Margin = new Padding(2);
+            tbpassword.Location = new Point(1117, 561);
             tbpassword.Name = "tbpassword";
-            tbpassword.Size = new Size(377, 16);
+            tbpassword.Size = new Size(517, 24);
             tbpassword.TabIndex = 1;
             tbpassword.TextChanged += tbpassword_TextChanged;
             // 
             // tbusername
             // 
             tbusername.BorderStyle = BorderStyle.None;
-            tbusername.Location = new Point(816, 266);
-            tbusername.Margin = new Padding(2);
+            tbusername.Location = new Point(1117, 429);
             tbusername.Name = "tbusername";
-            tbusername.Size = new Size(377, 16);
+            tbusername.Size = new Size(517, 24);
             tbusername.TabIndex = 0;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1329, 614);
-            Controls.Add(panel1);
-            Margin = new Padding(2);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(1838, 1050);
+            Controls.Add(tbpassword);
+            Controls.Add(lblogin);
+            Controls.Add(tbusername);
+            Controls.Add(lbregister);
+            DoubleBuffered = true;
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
         private Label lblogin;
         private TextBox tbpassword;
         private TextBox tbusername;

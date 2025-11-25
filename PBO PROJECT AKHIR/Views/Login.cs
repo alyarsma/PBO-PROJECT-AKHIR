@@ -70,7 +70,7 @@ namespace PBO_PROJECT_AKHIR.Views
 
         private void lbregister_Click(object sender, EventArgs e)
         {
-            //_authController.showRegister(this);
+           _authController.showRegister(this);
         }
 
         private void tbpassword_TextChanged(object sender, EventArgs e)

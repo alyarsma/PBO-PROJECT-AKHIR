@@ -18,7 +18,7 @@ namespace PBO_PROJECT_AKHIR.Controllers
         {
             _dbContext = new DbContext();
         }
-        public UserModel Login(UserModel user)
+        public UserModel Login(UserModel   user)
         {
             try
             {
@@ -92,6 +92,20 @@ namespace PBO_PROJECT_AKHIR.Controllers
                 MessageBox.Show($"Register ERROR: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
+        }
+
+        public void showLogin(Form form)
+        {
+            form.Hide();
+            Login loginForm = new Login();
+            loginForm.Show();
+        }
+
+        public void showRegister(Form form)
+        {
+            form.Hide();
+            Register registerForm = new Register();
+            registerForm.Show();
         }
     }
 }
