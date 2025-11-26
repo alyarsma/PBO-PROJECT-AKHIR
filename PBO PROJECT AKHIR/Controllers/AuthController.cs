@@ -71,7 +71,7 @@ namespace PBO_PROJECT_AKHIR.Controllers
                 using (var conn = new NpgsqlConnection(_dbContext.connStr))
                 {
                     conn.Open();
-                    string query = @"INSERT INTO user(username, email, password, role) VALUES (@username, @email, @password,@role)";
+                    string query = @"INSERT INTO users (username, email, password, role) VALUES (@username, @email, @password, @role::role_user)";
 
                     string hashPassword = PasswordHelper.HashPassword(user.Password);
 

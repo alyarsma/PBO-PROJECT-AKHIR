@@ -89,6 +89,7 @@
             DoubleBuffered = true;
             Name = "Register";
             Text = "Register";
+            Load += Register_Load;
             ResumeLayout(false);
             PerformLayout();
         }

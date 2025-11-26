@@ -41,7 +41,7 @@ namespace PBO_PROJECT_AKHIR.Views
                         Username = username,
                         Email = email,
                         Password = password,
-                        Role = UserRole.admin
+                        Role = UserRole.user
                     };
                     var success = controller.Register(userRegister);
                     if (success)
@@ -58,6 +58,11 @@ namespace PBO_PROJECT_AKHIR.Views
             {
                 MessageBox.Show($"Gagal melakukan pendaftaran: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
