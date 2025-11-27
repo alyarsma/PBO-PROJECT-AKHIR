@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PBO_PROJECT_AKHIR.Models
 {
-    public class Order
+    public class Orders
     {
         public int OrderId { get; set; }
         public string Alamat { get; set; }

@@ -21,5 +21,18 @@ namespace PBO_PROJECT_AKHIR.Views.User
         {
 
         }
+
+        private void tbkatalogcustomer_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbkatalog_Click(object sender, EventArgs e)
+        {
+            KatalogCustomer userView = new KatalogCustomer();
+            userView.FormClosed += (s, args) => this.Close();
+            userView.Show();
+            this.Hide();
+        }
     }
 }
