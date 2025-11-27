@@ -7,9 +7,9 @@ using System.Drawing.Imaging;
 
 namespace PBO_PROJECT_AKHIR.Helpers
 {
-    public class ImageHelper
+    public static class ImageHelper
     {
-        public byte[] ImageToBinary(Image image)
+        public static byte[] ImageToBinary(Image image)
         {
             using (MemoryStream ms = new MemoryStream())
             {
@@ -18,7 +18,7 @@ namespace PBO_PROJECT_AKHIR.Helpers
             }
         }
 
-        public Image BinaryToImage(byte[] data)
+        public static Image BinaryToImage(byte[] data)
         {
             using (MemoryStream ms = new MemoryStream())
             {

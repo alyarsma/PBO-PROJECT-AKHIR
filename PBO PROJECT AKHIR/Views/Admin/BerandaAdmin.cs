@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBO_PROJECT_AKHIR.Views.User
+namespace PBO_PROJECT_AKHIR.Views.Admin
 {
-    public partial class BerandaCustomer : Form
+    public partial class BerandaAdmin : Form
     {
-        public BerandaCustomer()
+        public BerandaAdmin()
         {
             InitializeComponent();
         }
 
-        private void BerandaCustomer_Load(object sender, EventArgs e)
+        private void BerandaAdmin_Load(object sender, EventArgs e)
         {
 
         }

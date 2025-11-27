@@ -8,11 +8,12 @@ using System.Threading.Tasks;
 
 namespace PBO_PROJECT_AKHIR.Helpers
 {
-    public class AppSession
+    public static class AppSession
     {
-        public static User CurrentUser { get; set; }
+        public static UserModel CurrentUser { get; set; }
         public static bool IsAuthenticated => CurrentUser != null;
-        public static void SetUser(User user)
+
+        public static void SetUser(UserModel user)
         {
             CurrentUser = user;
         }
@@ -22,4 +23,5 @@ namespace PBO_PROJECT_AKHIR.Helpers
             CurrentUser = null;
         }
     }
+
 }

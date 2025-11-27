@@ -3,6 +3,8 @@ using PBO_PROJECT_AKHIR.Controllers;
 using PBO_PROJECT_AKHIR.Helpers;
 using PBO_PROJECT_AKHIR.Models;
 using PBO_PROJECT_AKHIR.Views;
+using PBO_PROJECT_AKHIR.Views.User;
+using PBO_PROJECT_AKHIR.Views.Admin;
 
 namespace PBO_PROJECT_AKHIR.Views
 {
@@ -38,14 +40,29 @@ namespace PBO_PROJECT_AKHIR.Views
 
                 if (auth != null)
                 {
+                    AppSession.CurrentUser = auth;
+
                     MessageBox.Show(
                         $"Login Berhasil. Selamat datang {user.Username}",
                         "Berhasil",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
                     );
+                    if (AppSession.CurrentUser.Role == UserRole.admin)
+                    {
+                        BerandaAdmin admin = new BerandaAdmin ();
+                        admin.FormClosed += (s, args) => this.Close();
+                        admin.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        BerandaCustomer userView = new BerandaCustomer();
+                        userView.FormClosed += (s, args) => this.Close();
+                        userView.Show();
+                        this.Hide();
+                    }
 
-                    this.Hide();
                 }
                 else
                 {

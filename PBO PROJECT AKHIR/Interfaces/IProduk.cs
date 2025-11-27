@@ -10,8 +10,6 @@ namespace PBO_PROJECT_AKHIR.Interfaces
     public interface IProduk
     {
         void CreateProduct(Product product);
-
-        void GetUserId(int  userId);
         List<Product> GetAllProduct();
     }
 }
