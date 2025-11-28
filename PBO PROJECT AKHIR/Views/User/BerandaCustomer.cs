@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PBO_PROJECT_AKHIR.Views.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,10 +30,10 @@ namespace PBO_PROJECT_AKHIR.Views.User
 
         private void lbkatalog_Click(object sender, EventArgs e)
         {
-            //KatalogCustomer userView = new KatalogCustomer();
-            //userView.FormClosed += (s, args) => this.Close();
-            //userView.Show();
-            //this.Hide();
+            KatalogCustomer katalogcustomer = new KatalogCustomer();
+            katalogcustomer.FormClosed += (s, args) => this.Close();
+            katalogcustomer.Show();
+            this.Hide();
         }
     }
 }

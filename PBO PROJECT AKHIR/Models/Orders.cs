@@ -18,11 +18,6 @@ namespace PBO_PROJECT_AKHIR.Models
 
     public enum StatusPesanan
     {
-        [Description("Menunggu Dikonfirmasi")]
-        MenungguDikonfirmasi,
-
-        [Description("Dikirim")]
-        Dikirim,
 
         [Description("Selesai")]
         Selesai,

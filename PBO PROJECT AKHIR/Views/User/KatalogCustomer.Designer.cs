@@ -41,8 +41,8 @@
             label6 = new Label();
             panel3 = new Panel();
             btnbuatpesanan = new Button();
-            label7 = new Label();
-            label5 = new Label();
+            lblsubtotal = new Label();
+            lblkeranjang = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -172,14 +172,13 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.Transparent;
-            panel3.BackgroundImage = Properties.Resources.banner_bawah__1_;
+            panel3.BackColor = Color.White;
             panel3.Controls.Add(btnbuatpesanan);
-            panel3.Controls.Add(label7);
-            panel3.Controls.Add(label5);
-            panel3.Location = new Point(56, 904);
+            panel3.Controls.Add(lblsubtotal);
+            panel3.Controls.Add(lblkeranjang);
+            panel3.Location = new Point(-2, 904);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1729, 134);
+            panel3.Size = new Size(1856, 150);
             panel3.TabIndex = 1;
             // 
             // btnbuatpesanan
@@ -194,29 +193,29 @@
             btnbuatpesanan.Text = "Buat Pesanan";
             btnbuatpesanan.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // lblsubtotal
             // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.White;
-            label7.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(1093, 60);
-            label7.Name = "label7";
-            label7.Size = new Size(182, 42);
-            label7.TabIndex = 3;
-            label7.Text = "Rp 25.000,00";
-            label7.Click += label7_Click;
+            lblsubtotal.AutoSize = true;
+            lblsubtotal.BackColor = Color.White;
+            lblsubtotal.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblsubtotal.Location = new Point(1093, 60);
+            lblsubtotal.Name = "lblsubtotal";
+            lblsubtotal.Size = new Size(182, 42);
+            lblsubtotal.TabIndex = 3;
+            lblsubtotal.Text = "Rp 25.000,00";
+            lblsubtotal.Click += label7_Click;
             // 
-            // label5
+            // lblkeranjang
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.White;
-            label5.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(80, 60);
-            label5.Name = "label5";
-            label5.Size = new Size(403, 42);
-            label5.TabIndex = 2;
-            label5.Text = "Tidak ada produk yang dipilih";
-            label5.Click += label5_Click;
+            lblkeranjang.AutoSize = true;
+            lblkeranjang.BackColor = Color.White;
+            lblkeranjang.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblkeranjang.Location = new Point(80, 60);
+            lblkeranjang.Name = "lblkeranjang";
+            lblkeranjang.Size = new Size(403, 42);
+            lblkeranjang.TabIndex = 2;
+            lblkeranjang.Text = "Tidak ada produk yang dipilih";
+            lblkeranjang.Click += label5_Click;
             // 
             // KatalogCustomer
             // 
@@ -256,8 +255,8 @@
         private Button btntambah;
         private Button btnkurang;
         private Panel panel3;
-        private Label label5;
-        private Label label7;
+        private Label lblkeranjang;
+        private Label lblsubtotal;
         private Button btnbuatpesanan;
         private Label label8;
     }
