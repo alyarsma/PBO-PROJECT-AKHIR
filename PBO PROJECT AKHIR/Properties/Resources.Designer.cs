@@ -63,6 +63,16 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anggrek_bulan_putih {
+            get {
+                object obj = ResourceManager.GetObject("anggrek bulan putih", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ANGGREK_CATTLEYA {
             get {
                 object obj = ResourceManager.GetObject("ANGGREK CATTLEYA", resourceCulture);
@@ -93,9 +103,39 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Beranda_admin__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Beranda admin (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Beranda_admin__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Beranda admin (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Beranda_customer__2_ {
             get {
                 object obj = ResourceManager.GetObject("Beranda customer (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Katalog_admin {
+            get {
+                object obj = ResourceManager.GetObject("BG Katalog admin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +153,29 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap card_produk {
+            get {
+                object obj = ResourceManager.GetObject("card produk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_5 {
             get {
                 object obj = ResourceManager.GetObject("image 5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Katalog_Admin {
+            get {
+                object obj = ResourceManager.GetObject("Katalog Admin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +206,66 @@ namespace PBO_PROJECT_AKHIR.Properties {
         internal static System.Drawing.Bitmap KATALOG_PRODUK__6_ {
             get {
                 object obj = ResourceManager.GetObject("KATALOG PRODUK (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mingcute__pencil_line {
+            get {
+                object obj = ResourceManager.GetObject("mingcute--pencil-line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mingcute__pencil_line1 {
+            get {
+                object obj = ResourceManager.GetObject("mingcute--pencil-line1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pepicons_pencil__plus_circle {
+            get {
+                object obj = ResourceManager.GetObject("pepicons-pencil--plus-circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pepicons_pencil__plus_circle__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pepicons-pencil--plus-circle (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pepicons_pencil__plus_circle__2_ {
+            get {
+                object obj = ResourceManager.GetObject("pepicons-pencil--plus-circle (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pepicons_pencil__plus_circle1 {
+            get {
+                object obj = ResourceManager.GetObject("pepicons-pencil--plus-circle1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

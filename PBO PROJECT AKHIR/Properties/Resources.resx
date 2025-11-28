@@ -121,14 +121,26 @@
   <data name="ANGGREK CATTLEYA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ANGGREK CATTLEYA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pepicons-pencil--plus-circle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepicons-pencil--plus-circle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mingcute--pencil-line1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mingcute--pencil-line1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KATALOG PRODUK (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KATALOG PRODUK (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mingcute--pencil-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mingcute--pencil-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepicons-pencil--plus-circle (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepicons-pencil--plus-circle (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="banner bawah (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banner bawah (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KATALOG PRODUK (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KATALOG PRODUK (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Beranda customer (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Beranda customer (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pepicons-pencil--plus-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepicons-pencil--plus-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,19 +148,43 @@
   <data name="bi--person-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bi--person-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KATALOG PRODUK (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KATALOG PRODUK (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="banner bawah" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\banner bawah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="user (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card produk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card produk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KATALOG PRODUK (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KATALOG PRODUK (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Katalog Admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Katalog Admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pepicons-pencil--plus-circle (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pepicons-pencil--plus-circle (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anggrek bulan putih" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anggrek bulan putih.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banner bawah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner bawah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KATALOG PRODUK (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KATALOG PRODUK (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beranda customer (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beranda customer (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beranda admin (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beranda admin (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BG Katalog admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BG Katalog admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KATALOG PRODUK (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KATALOG PRODUK (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beranda admin (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beranda admin (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
