@@ -20,7 +20,15 @@ namespace PBO_PROJECT_AKHIR.Helpers
 
         public static Image BinaryToImage(byte[] data)
         {
-            using (MemoryStream ms = new MemoryStream())
+            //using (MemoryStream ms = new MemoryStream())
+            //{
+            //    return Image.FromStream(ms);
+            //}
+
+            if (data == null || data.Length == 0)
+                return null; // boleh kasih fallback juga
+
+            using (MemoryStream ms = new MemoryStream(data))
             {
                 return Image.FromStream(ms);
             }

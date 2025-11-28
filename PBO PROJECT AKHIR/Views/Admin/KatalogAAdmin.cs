@@ -1,4 +1,5 @@
-﻿using PBO_PROJECT_AKHIR.Interfaces;
+﻿using PBO_PROJECT_AKHIR.Helpers;
+using PBO_PROJECT_AKHIR.Interfaces;
 using PBO_PROJECT_AKHIR.Models;
 using System;
 using System.Collections.Generic;
@@ -47,12 +48,13 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 BackColor = Color.Transparent,
                 SizeMode = PictureBoxSizeMode.Zoom
             };
+            displayProduk.Image = ImageHelper.BinaryToImage(product.Image);
 
             Label namaProduk = new Label
             {
                 Text = product.ProductName,
                 Location = new Point(26, 186),
-                Size = new Size(132, 50),
+                Size = new Size(190, 50),
                 BackColor = Color.Transparent,
                 Font = new Font("Poppins SemiBold", 10, FontStyle.Bold),
                 TextAlign = ContentAlignment.TopLeft
@@ -137,6 +139,14 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
         {
             TambahProduk tambahProduk = new TambahProduk();
             tambahProduk.Show();
+        }
+
+        private void btnberandaadmin_Click(object sender, EventArgs e)
+        {
+            BerandaAdmin berandaAdmin = new BerandaAdmin();
+            berandaAdmin.FormClosed += (s, args) => this.Close();
+            berandaAdmin.Show();
+            this.Hide();
         }
     }
 }

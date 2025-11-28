@@ -56,16 +56,28 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                     ProductName = namaProduk,
                     Stock = stokProduk,
                     Price = hargaProduk,
-                    UserId = AppSession.CurrentUser.UserId,
+                    //UserId = AppSession.CurrentUser.UserId,
                 };
 
                 productController.CreateProduct(product);
                 MessageBox.Show("Produk berhasil ditambahkan", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
-            } catch (Exception ex)
+
+                var katalogAdmin = new KatalogAAdmin(productController);
+                katalogAdmin.Show();
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show($"Gagal menambahkan produk {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnbatalsimpan_Click(object sender, EventArgs e)
+        {
+            KatalogAAdmin katalogAdmin = new KatalogAAdmin(productController);
+            katalogAdmin.FormClosed += (s, args) => this.Close();
+            katalogAdmin.Show();
+            this.Hide();
         }
     }
 }

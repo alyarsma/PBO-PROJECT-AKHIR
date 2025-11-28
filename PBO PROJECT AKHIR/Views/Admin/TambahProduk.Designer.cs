@@ -112,6 +112,7 @@
             btnbatalsimpan.TabIndex = 5;
             btnbatalsimpan.Text = "Batal";
             btnbatalsimpan.UseVisualStyleBackColor = false;
+            btnbatalsimpan.Click += btnbatalsimpan_Click;
             // 
             // pbgambarproduk
             // 

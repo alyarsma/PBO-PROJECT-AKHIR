@@ -69,8 +69,8 @@ namespace PBO_PROJECT_AKHIR.Controllers
                                     ProductId = reader.GetInt32(0),
                                     ProductName = reader.GetString(1),
                                     Image = reader["image"] as byte[],
-                                    Price = reader.GetInt32(2),
-                                    Stock = reader.GetInt32(3)
+                                    Price = reader.GetInt32(3),
+                                    Stock = reader.GetInt32(4)
                                 };
                                 products.Add(product);
                             }

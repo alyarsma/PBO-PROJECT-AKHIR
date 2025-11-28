@@ -59,6 +59,7 @@
             btnberandaadmin.TabIndex = 0;
             btnberandaadmin.Text = "Beranda";
             btnberandaadmin.UseVisualStyleBackColor = false;
+            btnberandaadmin.Click += btnberandaadmin_Click;
             // 
             // btnkatalogadmin
             // 
