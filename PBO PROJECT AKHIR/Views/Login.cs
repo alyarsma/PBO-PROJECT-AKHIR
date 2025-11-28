@@ -57,7 +57,7 @@ namespace PBO_PROJECT_AKHIR.Views
                     }
                     else
                     {
-                        BerandaCustomer userView = new BerandaCustomer();
+                        BerandaCustomer2 userView = new BerandaCustomer2();
                         userView.FormClosed += (s, args) => this.Close();
                         userView.Show();
                         this.Hide();

@@ -93,6 +93,26 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Beranda_customer__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Beranda customer (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bi__person_circle {
+            get {
+                object obj = ResourceManager.GetObject("bi--person-circle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_5 {
             get {
                 object obj = ResourceManager.GetObject("image 5", resourceCulture);
@@ -116,6 +136,16 @@ namespace PBO_PROJECT_AKHIR.Properties {
         internal static System.Drawing.Bitmap KATALOG_PRODUK__2_ {
             get {
                 object obj = ResourceManager.GetObject("KATALOG PRODUK (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap KATALOG_PRODUK__6_ {
+            get {
+                object obj = ResourceManager.GetObject("KATALOG PRODUK (6)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
