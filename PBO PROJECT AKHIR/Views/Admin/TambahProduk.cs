@@ -32,7 +32,6 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             {
                 string selectedItem = openFileDialog.FileName;
                 pbgambarproduk.Image = Image.FromFile(selectedItem);
-
             }
         }
 

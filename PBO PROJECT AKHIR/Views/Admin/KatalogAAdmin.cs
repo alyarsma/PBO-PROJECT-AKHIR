@@ -56,6 +56,7 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 Location = new Point(26, 186),
                 Size = new Size(190, 50),
                 BackColor = Color.Transparent,
+                ForeColor = Color.Indigo,
                 Font = new Font("Poppins SemiBold", 10, FontStyle.Bold),
                 TextAlign = ContentAlignment.TopLeft
             };
