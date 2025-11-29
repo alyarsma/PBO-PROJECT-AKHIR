@@ -73,9 +73,9 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
 
         private void btnbatalsimpan_Click(object sender, EventArgs e)
         {
-            KatalogAAdmin katalogAdmin = new KatalogAAdmin(productController);
-            katalogAdmin.FormClosed += (s, args) => this.Close();
-            katalogAdmin.Show();
+            //KatalogAAdmin katalogAdmin = new KatalogAAdmin(productController);
+            //katalogAdmin.FormClosed += (s, args) => this.Close();
+            //katalogAdmin.Show();
             this.Hide();
         }
     }

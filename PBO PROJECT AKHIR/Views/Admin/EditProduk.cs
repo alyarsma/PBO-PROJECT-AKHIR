@@ -18,18 +18,18 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
         private IProduk productController;
         private OpenFileDialog openFileDialog;
         public Product Product;
-        private bool isFormating = false;
 
         public EditProduk(IProduk productController, Product product)
         {
             InitializeComponent();
             openFileDialog = new OpenFileDialog();
-            productController = new ProductController();
+            //productController = new ProductController();
+            this.productController = productController;
             Product = product;
             tbeditnamaproduk.Text = product.ProductName;
             tbedithargaproduk.Text = product.Price.ToString();
             tbeditstokproduk.Text = product.Stock.ToString();
-
+            pictureBox1.Image = Image.FromStream(new MemoryStream(product.Image));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)//harusnya pbgambarprodukbaru
@@ -48,26 +48,26 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Gagal Mengedit produk {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Pilih gambar terlebih dahulu!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
         private void btnsimpanedit_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(tbeditnamaproduk.Text))
+            if (string.IsNullOrWhiteSpace(tbeditnamaproduk.Text))
             {
                 MessageBox.Show("Nama produk tidak boleh kosong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             Product.ProductName = tbeditnamaproduk.Text;
 
-            if (!int.TryParse(tbedithargaproduk.Text, out int harga))
+            if (!int.TryParse(tbedithargaproduk.Text, out int price))
             {
                 MessageBox.Show("Harga produk harus berupa angka!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            Product.Price = harga;
+            Product.Price = price;
 
             if (pictureBox1.Image != null)
             {
@@ -81,7 +81,9 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             DialogResult result = MessageBox.Show("Apakah anda yakin ingin mengubah?", "Konfirmasi Edit", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (result == DialogResult.OK)
             {
-                productController.EditProduk(Product);
+                //productController.EditProduk(Product);
+                this.productController.EditProduk(Product);
+                MessageBox.Show("Produk berhasil diubah.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
         }

@@ -102,7 +102,12 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 BackgroundImage = Properties.Resources.mingcute__pencil_line1,
                 BackgroundImageLayout = ImageLayout.Zoom
             };
-            //editProduk.Click += (sender, e) => productController.EditProduk();
+            editProduk.Click += (sender, e) => //productController.EditProduk(product);
+            {
+                EditProduk editForm = new EditProduk(productController, product);
+                editForm.FormClosed += (s2, e2) => LoadProducts();
+                editForm.Show();
+            };
 
             //PictureBox editProduk = new PictureBox
             //{
