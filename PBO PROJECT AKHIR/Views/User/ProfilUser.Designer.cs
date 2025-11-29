@@ -36,7 +36,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.PROFIL;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1839, 1050);
             DoubleBuffered = true;
             Name = "ProfilUser";
             Text = "ProfilUser";
