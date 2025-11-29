@@ -35,5 +35,13 @@ namespace PBO_PROJECT_AKHIR.Views.User
             katalogcustomer.Show();
             this.Hide();
         }
+
+        private void pctbProfilUser_Click(object sender, EventArgs e)
+        {
+            ProfilUser profilUser = new ProfilUser();
+            profilUser.FormClosed += (s, args) => this.Close();
+            profilUser.Show();
+            this.Hide();
+        }
     }
 }

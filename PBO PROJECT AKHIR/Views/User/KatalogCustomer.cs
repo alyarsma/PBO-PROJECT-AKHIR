@@ -204,25 +204,41 @@ namespace PBO_PROJECT_AKHIR.Views.User
         }
 
         public void LoadProducts()
-{
-    flowLayoutPanel1.Controls.Clear();
+        {
+            flowLayoutPanel1.Controls.Clear();
 
-    List<Product> products = productController.GetAllProduct();
+            List<Product> products = productController.GetAllProduct();
 
-    foreach (Product product in products)
-    {
-        // Jika belum ada order untuk user saat ini, bisa bikin dummy atau ambil order dari controller
-        Orders order = orderController.GetCurrentOrder(); // contoh, ganti sesuai implementasimu
+            foreach (Product product in products)
+            {
+                // Jika belum ada order untuk user saat ini, bisa bikin dummy atau ambil order dari controller
+                Orders order = orderController.GetCurrentOrder(); // contoh, ganti sesuai implementasimu
 
-        Panel panelProduk = CreateProductPanel(product, order, lblKeranjang, lblSubtotal);
-        flowLayoutPanel1.Controls.Add(panelProduk);
-    }
-}
+                Panel panelProduk = CreateProductPanel(product, order, lblKeranjang, lblSubtotal);
+                flowLayoutPanel1.Controls.Add(panelProduk);
+            }
+        }
 
 
         private void label2_Click(object sender, EventArgs e) { }
         private void label5_Click(object sender, EventArgs e) { }
         private void label7_Click(object sender, EventArgs e) { }
         private void KatalogCustomer_Load(object sender, EventArgs e) { }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            BerandaCustomer berandaCustomer = new BerandaCustomer();
+            berandaCustomer.FormClosed += (s, args) => this.Close();
+            berandaCustomer.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ProfilUser profilUser = new ProfilUser();
+            profilUser.FormClosed += (s, args) => this.Close();
+            profilUser.Show();
+            this.Hide();
+        }
     }
 }

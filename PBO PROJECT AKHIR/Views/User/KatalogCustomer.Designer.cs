@@ -41,11 +41,19 @@
             label6 = new Label();
             panel3 = new Panel();
             btnbuatpesanan = new Button();
+            label1 = new Label();
+            panel4 = new Panel();
+            panel5 = new Panel();
+            label5 = new Label();
+            pictureBox2 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -189,13 +197,69 @@
             btnbuatpesanan.Text = "Buat Pesanan";
             btnbuatpesanan.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Poppins Medium", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DimGray;
+            label1.Location = new Point(1, 7);
+            label1.Name = "label1";
+            label1.Size = new Size(150, 50);
+            label1.TabIndex = 1;
+            label1.Text = "Beranda";
+            label1.Click += label1_Click;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Transparent;
+            panel4.Controls.Add(label1);
+            panel4.Location = new Point(416, 205);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(142, 55);
+            panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Transparent;
+            panel5.Controls.Add(label5);
+            panel5.Location = new Point(1127, 208);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(145, 52);
+            panel5.TabIndex = 3;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Poppins Medium", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.DimGray;
+            label5.Location = new Point(-9, 3);
+            label5.Name = "label5";
+            label5.Size = new Size(167, 50);
+            label5.TabIndex = 2;
+            label5.Text = "Transaksi";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = Properties.Resources.user;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox2.Location = new Point(1537, 72);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(79, 73);
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
             // KatalogCustomer
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.KATALOG_PRODUK__2_;
+            BackgroundImage = Properties.Resources.KATALOG_PRODUK__4_;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1691, 1050);
+            Controls.Add(pictureBox2);
+            Controls.Add(panel5);
+            Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(panel3);
             Controls.Add(flowLayoutPanel1);
@@ -210,6 +274,11 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -228,5 +297,10 @@
         private Button btnbuatpesanan;
         private Label label8;
         private Label label4;
+        private Label label1;
+        private Panel panel4;
+        private Panel panel5;
+        private Label label5;
+        private PictureBox pictureBox2;
     }
 }

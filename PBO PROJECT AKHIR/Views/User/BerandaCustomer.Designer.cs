@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BerandaCustomer));
             pbprofilcustomer = new PictureBox();
-            pictureBox1 = new PictureBox();
             lbkatalog = new Label();
             lbtransaksi = new Label();
             lbberanda = new Label();
+            pctbProfilUser = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pbprofilcustomer).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pctbProfilUser).BeginInit();
             SuspendLayout();
             // 
             // pbprofilcustomer
@@ -49,17 +49,6 @@
             pbprofilcustomer.Size = new Size(94, 94);
             pbprofilcustomer.TabIndex = 3;
             pbprofilcustomer.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1773, 36);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(83, 79);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
             // 
             // lbkatalog
             // 
@@ -95,6 +84,18 @@
             lbberanda.TabIndex = 7;
             lbberanda.Text = "Beranda";
             // 
+            // pctbProfilUser
+            // 
+            pctbProfilUser.BackColor = Color.Transparent;
+            pctbProfilUser.BackgroundImage = Properties.Resources.user;
+            pctbProfilUser.BackgroundImageLayout = ImageLayout.Zoom;
+            pctbProfilUser.Location = new Point(1738, 38);
+            pctbProfilUser.Name = "pctbProfilUser";
+            pctbProfilUser.Size = new Size(153, 77);
+            pctbProfilUser.TabIndex = 8;
+            pctbProfilUser.TabStop = false;
+            pctbProfilUser.Click += pctbProfilUser_Click;
+            // 
             // BerandaCustomer
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -102,10 +103,10 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1946, 1106);
+            Controls.Add(pctbProfilUser);
             Controls.Add(lbberanda);
             Controls.Add(lbtransaksi);
             Controls.Add(lbkatalog);
-            Controls.Add(pictureBox1);
             Controls.Add(pbprofilcustomer);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
@@ -114,7 +115,7 @@
             Text = "BerandaCustomer";
             Load += BerandaCustomer_Load;
             ((System.ComponentModel.ISupportInitialize)pbprofilcustomer).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pctbProfilUser).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,9 +125,9 @@
         private TextBox tbberandacustomer;
         private TextBox tbtransaksicustomer;
         private PictureBox pbprofilcustomer;
-        private PictureBox pictureBox1;
         private Label lbkatalog;
         private Label lbtransaksi;
         private Label lbberanda;
+        private PictureBox pctbProfilUser;
     }
 }
