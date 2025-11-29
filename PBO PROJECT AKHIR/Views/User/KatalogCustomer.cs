@@ -30,28 +30,28 @@ namespace PBO_PROJECT_AKHIR.Views.User
             lblKeranjang = new Label();
             lblKeranjang.Name = "lblKeranjang";
             lblKeranjang.Text = "0";
-            lblKeranjang.Font = new Font("Poppins", 9, FontStyle.Regular);
+            lblKeranjang.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblKeranjang.ForeColor = Color.Black;
-            lblKeranjang.Size = new Size(50, 20);
-            lblKeranjang.Location = new Point(100, 20); // Sesuaikan dengan layout form
+            lblKeranjang.Size = new Size(403, 42);
+            lblKeranjang.Location = new Point(80, 60); // Sesuaikan dengan layout form
             lblKeranjang.TextAlign = ContentAlignment.MiddleLeft;
 
             // Inisialisasi lblSubtotal
             lblSubtotal = new Label();
             lblSubtotal.Name = "lblSubtotal";
             lblSubtotal.Text = "0";
-            lblSubtotal.Font = new Font("Poppins", 9, FontStyle.Bold);
+            lblSubtotal.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblSubtotal.ForeColor = Color.Black;
-            lblSubtotal.Size = new Size(100, 20);
-            lblSubtotal.Location = new Point(100, 50); // Sesuaikan dengan layout form
+            lblSubtotal.Size = new Size(182, 42);
+            lblSubtotal.Location = new Point(1093, 60); // Sesuaikan dengan layout form
             lblSubtotal.TextAlign = ContentAlignment.MiddleLeft;
 
             // Tambahkan ke form
-            this.Controls.Add(lblKeranjang);
-            this.Controls.Add(lblSubtotal);
+            panel3.Controls.Add(lblKeranjang);
+            panel3.Controls.Add(lblSubtotal);
 
             // Atau jika sudah ada di designer, cari kontrol yang sudah ada
-            
+
         }
 
 
@@ -80,8 +80,8 @@ namespace PBO_PROJECT_AKHIR.Views.User
             Label namaProduk = new Label
             {
                 Text = product.ProductName,
-                Location = new Point(10, 150),
-                Size = new Size(240, 28),
+                Location = new Point(28, 159),
+                Size = new Size(192, 28),
                 BackColor = Color.Transparent,
                 Font = new Font("Poppins", 9, FontStyle.Bold),
                 TextAlign = ContentAlignment.MiddleLeft
@@ -90,8 +90,8 @@ namespace PBO_PROJECT_AKHIR.Views.User
             Label hargaProduk = new Label
             {
                 Text = product.Price.ToString(),
-                Location = new Point(10, 180),
-                Size = new Size(240, 24),
+                Location = new Point(119, 192),
+                Size = new Size(126, 28),
                 BackColor = Color.Transparent,
                 ForeColor = Color.Purple,
                 Font = new Font("Poppins", 9, FontStyle.Bold),
@@ -101,8 +101,8 @@ namespace PBO_PROJECT_AKHIR.Views.User
             Label stokProduk = new Label
             {
                 Text = product.Stock.ToString(),
-                Location = new Point(10, 205),
-                Size = new Size(240, 22),
+                Location = new Point(20, 194),
+                Size = new Size(88, 28),
                 BackColor = Color.Transparent,
                 ForeColor = Color.DarkGray,
                 Font = new Font("Poppins", 8, FontStyle.Regular),
@@ -112,8 +112,8 @@ namespace PBO_PROJECT_AKHIR.Views.User
             Label jmlhProduk = new Label
             {
                 Text = order.JumlahItem.ToString(),
-                Location = new Point(120, 235),
-                Size = new Size(30, 28),
+                Location = new Point(120, 246),
+                Size = new Size(25, 31),
                 BackColor = Color.Transparent,
                 Font = new Font("Poppins", 9, FontStyle.Bold),
                 TextAlign = ContentAlignment.MiddleCenter
@@ -121,8 +121,8 @@ namespace PBO_PROJECT_AKHIR.Views.User
 
             Button buttonTambah = new Button
             {
-                Location = new Point(160, 233),
-                Size = new Size(34, 30),
+                Location = new Point(151, 243),
+                Size = new Size(26, 33),
                 Text = "+",
                 BackColor = Color.Transparent,
                 Font = new Font("Poppins", 9, FontStyle.Bold)
@@ -158,8 +158,8 @@ namespace PBO_PROJECT_AKHIR.Views.User
 
             Button buttonKurang = new Button
             {
-                Location = new Point(80, 233),
-                Size = new Size(34, 30),
+                Location = new Point(86, 243),
+                Size = new Size(26, 33),
                 Text = "-",
                 BackColor = Color.Transparent,
                 Font = new Font("Poppins", 9, FontStyle.Bold)

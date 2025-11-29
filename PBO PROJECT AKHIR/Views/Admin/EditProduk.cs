@@ -46,6 +46,10 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                     string selectedItem = openFileDialog.FileName;
                     pictureBox1.Image = Image.FromFile(selectedItem);
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Gagal Mengedit produk {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

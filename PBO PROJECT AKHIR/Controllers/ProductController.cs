@@ -47,6 +47,39 @@ namespace PBO_PROJECT_AKHIR.Controllers
             }
         }
 
+        public void EditProduk(Product product)
+        {
+            try
+            {
+                using (var conn = new NpgsqlConnection(_dbContext.connStr))
+                {
+                    conn.Open();
+                    string query = @"UPDATE products 
+                             SET product_name = @product_name,
+                                 image = @image,
+                                 price = @price,
+                                 stock = @stock
+                             WHERE product_id = @product_id";
+
+                    using (var cmd = new NpgsqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@product_id", product.ProductId);
+                        cmd.Parameters.AddWithValue("@product_name", product.ProductName);
+                        cmd.Parameters.AddWithValue("@image", product.Image);
+                        cmd.Parameters.AddWithValue("@price", product.Price);
+                        cmd.Parameters.AddWithValue("@stock", product.Stock);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Edit Product ERROR: {ex.Message}");
+            }
+        }
+
+
         public List<Product> GetAllProduct()
         {
             List<Product> products = new List<Product>();
