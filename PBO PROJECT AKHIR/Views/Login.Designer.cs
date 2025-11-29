@@ -39,11 +39,12 @@
             // 
             lbregister.AutoSize = true;
             lbregister.BackColor = Color.Navy;
-            lbregister.Font = new Font("Poppins Medium", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbregister.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbregister.ForeColor = Color.Transparent;
-            lbregister.Location = new Point(1310, 900);
+            lbregister.Location = new Point(871, 547);
+            lbregister.Margin = new Padding(2, 0, 2, 0);
             lbregister.Name = "lbregister";
-            lbregister.Size = new Size(163, 56);
+            lbregister.Size = new Size(101, 26);
             lbregister.TabIndex = 3;
             lbregister.Text = "Register";
             lbregister.Click += lbregister_Click;
@@ -52,11 +53,12 @@
             // 
             lblogin.AutoSize = true;
             lblogin.BackColor = Color.Navy;
-            lblogin.Font = new Font("Poppins Medium", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblogin.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblogin.ForeColor = Color.Transparent;
-            lblogin.Location = new Point(1325, 679);
+            lblogin.Location = new Point(883, 411);
+            lblogin.Margin = new Padding(2, 0, 2, 0);
             lblogin.Name = "lblogin";
-            lblogin.Size = new Size(114, 56);
+            lblogin.Size = new Size(70, 26);
             lblogin.TabIndex = 2;
             lblogin.Text = "Login";
             lblogin.Click += lblogin_Click;
@@ -64,32 +66,35 @@
             // tbpassword
             // 
             tbpassword.BorderStyle = BorderStyle.None;
-            tbpassword.Location = new Point(1117, 561);
+            tbpassword.Location = new Point(782, 337);
+            tbpassword.Margin = new Padding(2);
             tbpassword.Name = "tbpassword";
-            tbpassword.Size = new Size(517, 24);
+            tbpassword.Size = new Size(284, 16);
             tbpassword.TabIndex = 1;
             tbpassword.TextChanged += tbpassword_TextChanged;
             // 
             // tbusername
             // 
             tbusername.BorderStyle = BorderStyle.None;
-            tbusername.Location = new Point(1117, 429);
+            tbusername.Location = new Point(782, 257);
+            tbusername.Margin = new Padding(2);
             tbusername.Name = "tbusername";
-            tbusername.Size = new Size(517, 24);
+            tbusername.Size = new Size(284, 16);
             tbusername.TabIndex = 0;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1838, 1050);
+            ClientSize = new Size(1287, 630);
             Controls.Add(tbpassword);
             Controls.Add(lblogin);
             Controls.Add(tbusername);
             Controls.Add(lbregister);
             DoubleBuffered = true;
+            Margin = new Padding(2);
             Name = "Login";
             Text = "Login";
             Load += Login_Load;

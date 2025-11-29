@@ -39,10 +39,11 @@
             btnberandaadmin.BackColor = Color.Transparent;
             btnberandaadmin.FlatAppearance.BorderSize = 0;
             btnberandaadmin.FlatStyle = FlatStyle.Flat;
-            btnberandaadmin.Font = new Font("Poppins", 14.2F, FontStyle.Bold);
-            btnberandaadmin.Location = new Point(364, 187);
+            btnberandaadmin.Font = new Font("Microsoft Sans Serif", 14.2F, FontStyle.Bold);
+            btnberandaadmin.Location = new Point(384, 140);
+            btnberandaadmin.Margin = new Padding(3, 2, 3, 2);
             btnberandaadmin.Name = "btnberandaadmin";
-            btnberandaadmin.Size = new Size(131, 40);
+            btnberandaadmin.Size = new Size(118, 30);
             btnberandaadmin.TabIndex = 0;
             btnberandaadmin.Text = "Beranda";
             btnberandaadmin.UseVisualStyleBackColor = false;
@@ -52,10 +53,11 @@
             btnkatalogadmin.BackColor = Color.Transparent;
             btnkatalogadmin.FlatAppearance.BorderSize = 0;
             btnkatalogadmin.FlatStyle = FlatStyle.Flat;
-            btnkatalogadmin.Font = new Font("Poppins", 14.2F, FontStyle.Bold);
-            btnkatalogadmin.Location = new Point(720, 187);
+            btnkatalogadmin.Font = new Font("Microsoft Sans Serif", 14.2F, FontStyle.Bold);
+            btnkatalogadmin.Location = new Point(659, 140);
+            btnkatalogadmin.Margin = new Padding(3, 2, 3, 2);
             btnkatalogadmin.Name = "btnkatalogadmin";
-            btnkatalogadmin.Size = new Size(131, 44);
+            btnkatalogadmin.Size = new Size(98, 33);
             btnkatalogadmin.TabIndex = 1;
             btnkatalogadmin.Text = "Katalog";
             btnkatalogadmin.UseVisualStyleBackColor = false;
@@ -66,10 +68,11 @@
             btntransaksiadmin.BackColor = Color.Transparent;
             btntransaksiadmin.FlatAppearance.BorderSize = 0;
             btntransaksiadmin.FlatStyle = FlatStyle.Flat;
-            btntransaksiadmin.Font = new Font("Poppins", 14.45F, FontStyle.Bold);
-            btntransaksiadmin.Location = new Point(1064, 186);
+            btntransaksiadmin.Font = new Font("Microsoft Sans Serif", 14.45F, FontStyle.Bold);
+            btntransaksiadmin.Location = new Point(918, 140);
+            btntransaksiadmin.Margin = new Padding(3, 2, 3, 2);
             btntransaksiadmin.Name = "btntransaksiadmin";
-            btntransaksiadmin.Size = new Size(155, 40);
+            btntransaksiadmin.Size = new Size(116, 30);
             btntransaksiadmin.TabIndex = 2;
             btntransaksiadmin.Text = "Transaksi";
             btntransaksiadmin.UseVisualStyleBackColor = false;
@@ -80,10 +83,11 @@
             button1.BackColor = Color.Transparent;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Poppins", 14.41F, FontStyle.Bold);
-            button1.Location = new Point(1417, 186);
+            button1.Font = new Font("Microsoft Sans Serif", 14.41F, FontStyle.Bold);
+            button1.Location = new Point(1184, 140);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(164, 45);
+            button1.Size = new Size(121, 34);
             button1.TabIndex = 3;
             button1.Text = "Keuangan";
             button1.UseVisualStyleBackColor = false;
@@ -91,11 +95,11 @@
             // 
             // BerandaAdmin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Beranda_admin__2_;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1924, 1055);
+            ClientSize = new Size(1684, 791);
             Controls.Add(button1);
             Controls.Add(btntransaksiadmin);
             Controls.Add(btnkatalogadmin);

@@ -29,7 +29,10 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
 
         private void btntransaksiadmin_Click(object sender, EventArgs e) //kena pencet
         {
-
+            TransaksiAdm transaksiAdm = new TransaksiAdm();
+            transaksiAdm.FormClosed += (s, args) => this.Close();
+            transaksiAdm.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e) //button keuangan, kena pencet Allahuakbar
