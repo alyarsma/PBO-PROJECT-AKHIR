@@ -30,19 +30,17 @@
         {
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel1 = new Panel();
+            label4 = new Label();
             label8 = new Label();
             btnkurang = new Button();
             btntambah = new Button();
             label3 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
-            label1 = new Label();
             panel2 = new Panel();
             label6 = new Label();
             panel3 = new Panel();
             btnbuatpesanan = new Button();
-            lblsubtotal = new Label();
-            lblkeranjang = new Label();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -64,17 +62,27 @@
             // 
             panel1.BackgroundImage = Properties.Resources.ANGGREK_CATTLEYA;
             panel1.BackgroundImageLayout = ImageLayout.Zoom;
+            panel1.Controls.Add(label4);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(btnkurang);
             panel1.Controls.Add(btntambah);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label1);
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
             panel1.Size = new Size(264, 302);
             panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Poppins Medium", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(36, 137);
+            label4.Name = "label4";
+            label4.Size = new Size(192, 28);
+            label4.TabIndex = 7;
+            label4.Text = "Anggrek Bulan Putih";
             // 
             // label8
             // 
@@ -141,21 +149,11 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Poppins Medium", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(28, 159);
-            label1.Name = "label1";
-            label1.Size = new Size(192, 28);
-            label1.TabIndex = 1;
-            label1.Text = "Anggrek Bulan Putih";
-            // 
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(label6);
-            panel2.Location = new Point(853, 187);
+            panel2.Location = new Point(777, 212);
             panel2.Name = "panel2";
             panel2.Size = new Size(134, 48);
             panel2.TabIndex = 1;
@@ -164,7 +162,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Poppins Medium", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(-13, -5);
+            label6.Location = new Point(-13, -4);
             label6.Name = "label6";
             label6.Size = new Size(157, 56);
             label6.TabIndex = 0;
@@ -174,8 +172,6 @@
             // 
             panel3.BackColor = Color.White;
             panel3.Controls.Add(btnbuatpesanan);
-            panel3.Controls.Add(lblsubtotal);
-            panel3.Controls.Add(lblkeranjang);
             panel3.Location = new Point(-2, 904);
             panel3.Name = "panel3";
             panel3.Size = new Size(1856, 150);
@@ -186,36 +182,12 @@
             btnbuatpesanan.BackColor = Color.Indigo;
             btnbuatpesanan.Font = new Font("Poppins Medium", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnbuatpesanan.ForeColor = Color.White;
-            btnbuatpesanan.Location = new Point(1338, 60);
+            btnbuatpesanan.Location = new Point(1338, 12);
             btnbuatpesanan.Name = "btnbuatpesanan";
             btnbuatpesanan.Size = new Size(243, 42);
             btnbuatpesanan.TabIndex = 4;
             btnbuatpesanan.Text = "Buat Pesanan";
             btnbuatpesanan.UseVisualStyleBackColor = false;
-            // 
-            // lblsubtotal
-            // 
-            lblsubtotal.AutoSize = true;
-            lblsubtotal.BackColor = Color.White;
-            lblsubtotal.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblsubtotal.Location = new Point(1093, 60);
-            lblsubtotal.Name = "lblsubtotal";
-            lblsubtotal.Size = new Size(182, 42);
-            lblsubtotal.TabIndex = 3;
-            lblsubtotal.Text = "Rp 25.000,00";
-            lblsubtotal.Click += label7_Click;
-            // 
-            // lblkeranjang
-            // 
-            lblkeranjang.AutoSize = true;
-            lblkeranjang.BackColor = Color.White;
-            lblkeranjang.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblkeranjang.Location = new Point(80, 60);
-            lblkeranjang.Name = "lblkeranjang";
-            lblkeranjang.Size = new Size(403, 42);
-            lblkeranjang.TabIndex = 2;
-            lblkeranjang.Text = "Tidak ada produk yang dipilih";
-            lblkeranjang.Click += label5_Click;
             // 
             // KatalogCustomer
             // 
@@ -223,7 +195,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.KATALOG_PRODUK__2_;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1838, 1050);
+            ClientSize = new Size(1691, 1050);
             Controls.Add(panel2);
             Controls.Add(panel3);
             Controls.Add(flowLayoutPanel1);
@@ -238,7 +210,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -247,7 +218,6 @@
         private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private Label label1;
         private Label label2;
         private Label label3;
         private Panel panel2;
@@ -255,9 +225,8 @@
         private Button btntambah;
         private Button btnkurang;
         private Panel panel3;
-        private Label lblkeranjang;
-        private Label lblsubtotal;
         private Button btnbuatpesanan;
         private Label label8;
+        private Label label4;
     }
 }

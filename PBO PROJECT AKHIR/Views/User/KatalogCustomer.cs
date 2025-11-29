@@ -32,18 +32,18 @@ namespace PBO_PROJECT_AKHIR.Views.User
             lblKeranjang.Text = "0";
             lblKeranjang.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblKeranjang.ForeColor = Color.Black;
-            lblKeranjang.Size = new Size(403, 42);
-            lblKeranjang.Location = new Point(80, 60); // Sesuaikan dengan layout form
+            lblKeranjang.Size = new Size(248, 25);
+            lblKeranjang.Location = new Point(57, 19); // Sesuaikan dengan layout form
             lblKeranjang.TextAlign = ContentAlignment.MiddleLeft;
 
             // Inisialisasi lblSubtotal
             lblSubtotal = new Label();
             lblSubtotal.Name = "lblSubtotal";
-            lblSubtotal.Text = "0";
+            lblSubtotal.Text = "Rp0";
             lblSubtotal.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblSubtotal.ForeColor = Color.Black;
-            lblSubtotal.Size = new Size(182, 42);
-            lblSubtotal.Location = new Point(1093, 60); // Sesuaikan dengan layout form
+            lblSubtotal.Size = new Size(114, 25);
+            lblSubtotal.Location = new Point(1020, 12); // Sesuaikan dengan layout form
             lblSubtotal.TextAlign = ContentAlignment.MiddleLeft;
 
             // Tambahkan ke form
