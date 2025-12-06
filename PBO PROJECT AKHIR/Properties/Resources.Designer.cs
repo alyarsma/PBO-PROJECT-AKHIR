@@ -163,9 +163,29 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fa6_solid__trash {
+            get {
+                object obj = ResourceManager.GetObject("fa6-solid--trash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap form_edit_produk {
             get {
                 object obj = ResourceManager.GetObject("form edit produk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap form_edit_produk__1_ {
+            get {
+                object obj = ResourceManager.GetObject("form edit produk (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

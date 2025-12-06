@@ -11,6 +11,7 @@ namespace PBO_PROJECT_AKHIR.Interfaces
     {
         void CreateProduct(Product product);
         void EditProduk(Product product);
+        void HapusProduk(int  productId);
         List<Product> GetAllProduct();
     }
 }

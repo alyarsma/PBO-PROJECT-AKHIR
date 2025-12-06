@@ -60,13 +60,13 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 MessageBox.Show("Nama produk tidak boleh kosong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+
             if (!int.TryParse(tbedithargaproduk.Text, out int price) || price <= 0)
             {
                 MessageBox.Show("Harga produk harus berupa angka dan tidak boleh 0!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+
             if (!int.TryParse(tbeditstokproduk.Text, out int stok) || stok < 0)
             {
                 MessageBox.Show("Stok harus berupa angka dan minimal 0!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -98,7 +98,28 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
 
         private void btnbataledit_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
+        }
+
+        private void pbhapusProduk_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show($"Apakah Anda yakin ingin menghapus produk '{Product.ProductName}'?",  "Konfirmasi Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    productController.HapusProduk(Product.ProductId);
+
+                    MessageBox.Show("Produk berhasil dihapus!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Terjadi kesalahan saat menghapus produk: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

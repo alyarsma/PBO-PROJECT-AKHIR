@@ -35,7 +35,9 @@
             btnupfotobaru = new Button();
             btnbataledit = new Button();
             btnsimpanedit = new Button();
+            pbhapusProduk = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbhapusProduk).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -122,6 +124,18 @@
             btnsimpanedit.UseVisualStyleBackColor = false;
             btnsimpanedit.Click += btnsimpanedit_Click;
             // 
+            // pbhapusProduk
+            // 
+            pbhapusProduk.BackColor = Color.Transparent;
+            pbhapusProduk.BackgroundImage = Properties.Resources.fa6_solid__trash;
+            pbhapusProduk.BackgroundImageLayout = ImageLayout.Zoom;
+            pbhapusProduk.Location = new Point(1120, 684);
+            pbhapusProduk.Name = "pbhapusProduk";
+            pbhapusProduk.Size = new Size(65, 65);
+            pbhapusProduk.TabIndex = 7;
+            pbhapusProduk.TabStop = false;
+            pbhapusProduk.Click += pbhapusProduk_Click;
+            // 
             // EditProduk
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -129,6 +143,7 @@
             BackgroundImage = Properties.Resources.form_edit_produk1;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1354, 853);
+            Controls.Add(pbhapusProduk);
             Controls.Add(btnsimpanedit);
             Controls.Add(btnbataledit);
             Controls.Add(btnupfotobaru);
@@ -141,6 +156,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "EditProduk";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbhapusProduk).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -154,5 +170,6 @@
         private Button btnupfotobaru;
         private Button btnbataledit;
         private Button btnsimpanedit;
+        private PictureBox pbhapusProduk;
     }
 }

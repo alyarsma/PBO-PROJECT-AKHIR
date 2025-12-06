@@ -142,5 +142,27 @@ namespace PBO_PROJECT_AKHIR.Controllers
                 MessageBox.Show($"Update Stock ERROR: {ex.Message}");
             }
         }
+
+        public void HapusProduk(int productId)
+        {
+            try
+            {
+                using (var conn = new NpgsqlConnection(_dbContext.connStr))
+                {
+                    conn.Open();
+
+                    string query = "DELETE FROM products WHERE product_id = @productId";
+
+                    using (var cmd = new NpgsqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@productId", productId);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            } catch (Exception ex)
+            {
+                MessageBox.Show($"Hapus Produk ERROR: {ex.Message}");
+            }
+        }
     }
 }
