@@ -38,22 +38,26 @@
             dataGridView1.BackgroundColor = SystemColors.GradientInactiveCaption;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.GridColor = SystemColors.GradientInactiveCaption;
-            dataGridView1.Location = new Point(156, 122);
+            dataGridView1.Location = new Point(178, 163);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(965, 467);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1103, 623);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // RiwayatPesanan
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1287, 630);
+            ClientSize = new Size(1471, 840);
             Controls.Add(dataGridView1);
             DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "RiwayatPesanan";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "RiwayatPesanan";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

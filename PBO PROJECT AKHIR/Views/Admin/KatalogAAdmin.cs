@@ -53,12 +53,14 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             Label namaProduk = new Label
             {
                 Text = product.ProductName,
-                Location = new Point(26, 186),
-                Size = new Size(190, 50),
+                Location = new Point(26, 180),
+                //Size = new Size(200, 50),
                 BackColor = Color.Transparent,
                 ForeColor = Color.Indigo,
                 Font = new Font("Poppins SemiBold", 10, FontStyle.Bold),
-                TextAlign = ContentAlignment.TopLeft
+                TextAlign = ContentAlignment.TopLeft,
+                AutoSize = true,
+                MaximumSize = new Size(200, 0)
             };
 
             Label hargaProduk = new Label

@@ -60,14 +60,22 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 MessageBox.Show("Nama produk tidak boleh kosong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            Product.ProductName = tbeditnamaproduk.Text;
-
-            if (!int.TryParse(tbedithargaproduk.Text, out int price))
+            
+            if (!int.TryParse(tbedithargaproduk.Text, out int price) || price <= 0)
             {
-                MessageBox.Show("Harga produk harus berupa angka!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Harga produk harus berupa angka dan tidak boleh 0!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+            
+            if (!int.TryParse(tbeditstokproduk.Text, out int stok) || stok < 0)
+            {
+                MessageBox.Show("Stok harus berupa angka dan minimal 0!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Product.ProductName = tbeditnamaproduk.Text.Trim();
             Product.Price = price;
+            Product.Stock = stok;
 
             if (pictureBox1.Image != null)
             {
@@ -86,6 +94,11 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 MessageBox.Show("Produk berhasil diubah.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
+        }
+
+        private void btnbataledit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

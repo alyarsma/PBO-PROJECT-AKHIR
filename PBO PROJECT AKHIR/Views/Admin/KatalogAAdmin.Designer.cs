@@ -170,7 +170,7 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Poppins SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Indigo;
-            label1.Location = new Point(95, 238);
+            label1.Location = new Point(95, 241);
             label1.Name = "label1";
             label1.Size = new Size(131, 30);
             label1.TabIndex = 2;
@@ -183,7 +183,7 @@
             lblnamaproduk.FlatStyle = FlatStyle.Flat;
             lblnamaproduk.Font = new Font("Poppins SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblnamaproduk.ForeColor = Color.Indigo;
-            lblnamaproduk.Location = new Point(26, 186);
+            lblnamaproduk.Location = new Point(26, 183);
             lblnamaproduk.Name = "lblnamaproduk";
             lblnamaproduk.Size = new Size(179, 30);
             lblnamaproduk.TabIndex = 1;
@@ -229,6 +229,7 @@
             Controls.Add(btnberandaadmin);
             DoubleBuffered = true;
             Name = "KatalogAAdmin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "KatalogAAdmin";
             flowLayoutPanelprodukadmin.ResumeLayout(false);
             panelproduk.ResumeLayout(false);

@@ -103,6 +103,7 @@
             DoubleBuffered = true;
             Margin = new Padding(2, 3, 2, 3);
             Name = "BerandaAdmin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "BerandaAdmin";
             Load += BerandaAdmin_Load;
             ResumeLayout(false);

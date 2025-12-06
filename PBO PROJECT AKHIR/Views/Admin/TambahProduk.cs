@@ -42,10 +42,28 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
                 MessageBox.Show("Pilih gambar terlebih dahulu!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            if (string.IsNullOrWhiteSpace(tbnamaproduk.Text))
+            {
+                MessageBox.Show("Nama produk tidak boleh kosong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!int.TryParse(tbhargaproduk.Text, out int hargaProduk) || hargaProduk <= 0)
+            {
+                MessageBox.Show("Harga harus berupa angka dan tidak boleh 0!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!int.TryParse(tbstokproduk.Text, out int stokProduk))
+            {
+                MessageBox.Show("Stok harus berupa angka!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             Image gambarproduk = pbgambarproduk.Image;
-            string namaProduk = tbnamaproduk.Text;
-            int hargaProduk = int.Parse(tbhargaproduk.Text);
-            int stokProduk = int.Parse(tbstokproduk.Text);
+            string namaProduk = tbnamaproduk.Text.Trim();
+            //int hargaProduk = int.Parse(tbhargaproduk.Text);
+            //int stokProduk = int.Parse(tbstokproduk.Text);
 
             try
             {

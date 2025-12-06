@@ -105,6 +105,7 @@
             btnbataledit.TabIndex = 5;
             btnbataledit.Text = "Batal";
             btnbataledit.UseVisualStyleBackColor = false;
+            btnbataledit.Click += btnbataledit_Click;
             // 
             // btnsimpanedit
             // 

@@ -39,9 +39,10 @@
             // btnPesanan
             // 
             btnPesanan.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPesanan.Location = new Point(307, 185);
+            btnPesanan.Location = new Point(351, 247);
+            btnPesanan.Margin = new Padding(3, 4, 3, 4);
             btnPesanan.Name = "btnPesanan";
-            btnPesanan.Size = new Size(126, 28);
+            btnPesanan.Size = new Size(144, 37);
             btnPesanan.TabIndex = 0;
             btnPesanan.Text = "Pesanan Masuk";
             btnPesanan.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // btnRiwayat
             // 
             btnRiwayat.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRiwayat.Location = new Point(893, 185);
+            btnRiwayat.Location = new Point(1021, 247);
+            btnRiwayat.Margin = new Padding(3, 4, 3, 4);
             btnRiwayat.Name = "btnRiwayat";
-            btnRiwayat.Size = new Size(126, 28);
+            btnRiwayat.Size = new Size(144, 37);
             btnRiwayat.TabIndex = 1;
             btnRiwayat.Text = "Riwayat Pesanan";
             btnRiwayat.UseVisualStyleBackColor = true;
@@ -60,9 +62,10 @@
             // btnBeranda
             // 
             btnBeranda.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnBeranda.Location = new Point(404, 102);
+            btnBeranda.Location = new Point(462, 136);
+            btnBeranda.Margin = new Padding(3, 4, 3, 4);
             btnBeranda.Name = "btnBeranda";
-            btnBeranda.Size = new Size(102, 28);
+            btnBeranda.Size = new Size(117, 37);
             btnBeranda.TabIndex = 2;
             btnBeranda.Text = "Beranda";
             btnBeranda.UseVisualStyleBackColor = true;
@@ -70,9 +73,10 @@
             // btnKatalog
             // 
             btnKatalog.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnKatalog.Location = new Point(616, 102);
+            btnKatalog.Location = new Point(704, 136);
+            btnKatalog.Margin = new Padding(3, 4, 3, 4);
             btnKatalog.Name = "btnKatalog";
-            btnKatalog.Size = new Size(102, 28);
+            btnKatalog.Size = new Size(117, 37);
             btnKatalog.TabIndex = 3;
             btnKatalog.Text = "Katalog";
             btnKatalog.UseVisualStyleBackColor = true;
@@ -80,9 +84,10 @@
             // btnTransaksi
             // 
             btnTransaksi.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnTransaksi.Location = new Point(829, 102);
+            btnTransaksi.Location = new Point(947, 136);
+            btnTransaksi.Margin = new Padding(3, 4, 3, 4);
             btnTransaksi.Name = "btnTransaksi";
-            btnTransaksi.Size = new Size(99, 28);
+            btnTransaksi.Size = new Size(113, 37);
             btnTransaksi.TabIndex = 4;
             btnTransaksi.Text = "Transaksi";
             btnTransaksi.UseVisualStyleBackColor = true;
@@ -90,18 +95,20 @@
             // 
             // TransaksiAdm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1287, 630);
+            ClientSize = new Size(1471, 840);
             Controls.Add(btnTransaksi);
             Controls.Add(btnKatalog);
             Controls.Add(btnBeranda);
             Controls.Add(btnRiwayat);
             Controls.Add(btnPesanan);
             DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "TransaksiAdm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TransaksiAdm";
             ResumeLayout(false);
         }

@@ -32,13 +32,15 @@
             // 
             // ProfilUser
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.PROFIL;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1839, 1050);
+            ClientSize = new Size(1471, 840);
             DoubleBuffered = true;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "ProfilUser";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ProfilUser";
             Load += ProfilUser_Load;
             ResumeLayout(false);
