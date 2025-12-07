@@ -61,10 +61,10 @@
             flowLayoutPanel1.AutoScroll = true;
             flowLayoutPanel1.BackColor = Color.Transparent;
             flowLayoutPanel1.Controls.Add(panel1);
-            flowLayoutPanel1.Location = new Point(45, 218);
-            flowLayoutPanel1.Margin = new Padding(2, 2, 2, 2);
+            flowLayoutPanel1.Location = new Point(56, 272);
+            flowLayoutPanel1.Margin = new Padding(2);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1383, 488);
+            flowLayoutPanel1.Size = new Size(1729, 610);
             flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -79,19 +79,19 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(2, 2);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(211, 242);
+            panel1.Size = new Size(264, 302);
             panel1.TabIndex = 0;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(29, 110);
+            label4.Location = new Point(36, 148);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(156, 17);
+            label4.Size = new Size(173, 20);
             label4.TabIndex = 7;
             label4.Text = "Anggrek Bulan Putih";
             // 
@@ -99,10 +99,10 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(96, 197);
+            label8.Location = new Point(120, 246);
             label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(16, 18);
+            label8.Size = new Size(20, 22);
             label8.TabIndex = 6;
             label8.Text = "0";
             // 
@@ -110,10 +110,10 @@
             // 
             btnkurang.BackgroundImageLayout = ImageLayout.Zoom;
             btnkurang.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnkurang.Location = new Point(69, 194);
-            btnkurang.Margin = new Padding(2, 2, 2, 2);
+            btnkurang.Location = new Point(86, 242);
+            btnkurang.Margin = new Padding(2);
             btnkurang.Name = "btnkurang";
-            btnkurang.Size = new Size(21, 26);
+            btnkurang.Size = new Size(26, 32);
             btnkurang.TabIndex = 5;
             btnkurang.Text = "-";
             btnkurang.UseVisualStyleBackColor = true;
@@ -122,10 +122,10 @@
             // 
             btntambah.BackgroundImageLayout = ImageLayout.Zoom;
             btntambah.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btntambah.Location = new Point(121, 194);
-            btntambah.Margin = new Padding(2, 2, 2, 2);
+            btntambah.Location = new Point(151, 242);
+            btntambah.Margin = new Padding(2);
             btntambah.Name = "btntambah";
-            btntambah.Size = new Size(21, 26);
+            btntambah.Size = new Size(26, 32);
             btntambah.TabIndex = 4;
             btntambah.Text = "+";
             btntambah.UseVisualStyleBackColor = true;
@@ -135,10 +135,10 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.DarkGray;
-            label3.Location = new Point(16, 155);
+            label3.Location = new Point(20, 194);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(73, 17);
+            label3.Size = new Size(81, 20);
             label3.TabIndex = 3;
             label3.Text = "Stok : 30";
             // 
@@ -147,10 +147,10 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Purple;
-            label2.Location = new Point(95, 154);
+            label2.Location = new Point(119, 192);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(106, 17);
+            label2.Size = new Size(117, 20);
             label2.TabIndex = 2;
             label2.Text = "Rp 25.000,00";
             label2.Click += label2_Click;
@@ -159,10 +159,10 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources.image_5;
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(33, 12);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Location = new Point(41, 15);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(151, 106);
+            pictureBox1.Size = new Size(189, 132);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -170,20 +170,20 @@
             // 
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(label6);
-            panel2.Location = new Point(622, 170);
-            panel2.Margin = new Padding(2, 2, 2, 2);
+            panel2.Location = new Point(778, 212);
+            panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(107, 38);
+            panel2.Size = new Size(134, 48);
             panel2.TabIndex = 1;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(-10, -3);
+            label6.Location = new Point(0, 5);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(113, 31);
+            label6.Size = new Size(133, 37);
             label6.TabIndex = 0;
             label6.Text = "Katalog";
             // 
@@ -191,10 +191,10 @@
             // 
             panel3.BackColor = Color.White;
             panel3.Controls.Add(btnbuatpesanan);
-            panel3.Location = new Point(-2, 723);
-            panel3.Margin = new Padding(2, 2, 2, 2);
+            panel3.Location = new Point(-2, 904);
+            panel3.Margin = new Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1485, 120);
+            panel3.Size = new Size(1856, 150);
             panel3.TabIndex = 1;
             // 
             // btnbuatpesanan
@@ -202,10 +202,10 @@
             btnbuatpesanan.BackColor = Color.Indigo;
             btnbuatpesanan.Font = new Font("Microsoft Sans Serif", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnbuatpesanan.ForeColor = Color.White;
-            btnbuatpesanan.Location = new Point(1070, 10);
-            btnbuatpesanan.Margin = new Padding(2, 2, 2, 2);
+            btnbuatpesanan.Location = new Point(1338, 12);
+            btnbuatpesanan.Margin = new Padding(2);
             btnbuatpesanan.Name = "btnbuatpesanan";
-            btnbuatpesanan.Size = new Size(194, 34);
+            btnbuatpesanan.Size = new Size(242, 42);
             btnbuatpesanan.TabIndex = 4;
             btnbuatpesanan.Text = "Buat Pesanan";
             btnbuatpesanan.UseVisualStyleBackColor = false;
@@ -215,10 +215,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DimGray;
-            label1.Location = new Point(1, 6);
+            label1.Location = new Point(6, 12);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(111, 29);
+            label1.Size = new Size(129, 32);
             label1.TabIndex = 1;
             label1.Text = "Beranda";
             label1.Click += label1_Click;
@@ -227,20 +227,20 @@
             // 
             panel4.BackColor = Color.Transparent;
             panel4.Controls.Add(label1);
-            panel4.Location = new Point(333, 164);
-            panel4.Margin = new Padding(2, 2, 2, 2);
+            panel4.Location = new Point(416, 205);
+            panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(114, 44);
+            panel4.Size = new Size(142, 55);
             panel4.TabIndex = 2;
             // 
             // panel5
             // 
             panel5.BackColor = Color.Transparent;
             panel5.Controls.Add(label5);
-            panel5.Location = new Point(902, 166);
-            panel5.Margin = new Padding(2, 2, 2, 2);
+            panel5.Location = new Point(1128, 208);
+            panel5.Margin = new Padding(2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(116, 42);
+            panel5.Size = new Size(145, 52);
             panel5.TabIndex = 3;
             // 
             // label5
@@ -248,10 +248,10 @@
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.DimGray;
-            label5.Location = new Point(-7, 2);
+            label5.Location = new Point(2, 10);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(127, 29);
+            label5.Size = new Size(146, 32);
             label5.TabIndex = 2;
             label5.Text = "Transaksi";
             // 
@@ -260,21 +260,21 @@
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.BackgroundImage = Properties.Resources.user;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(1230, 58);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Location = new Point(1538, 72);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(63, 58);
+            pictureBox2.Size = new Size(79, 72);
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
             // 
             // KatalogCustomer
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.KATALOG_PRODUK__4_;
+            BackgroundImage = Properties.Resources.KATALOG_PRODUK__5_;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1353, 840);
+            ClientSize = new Size(1691, 1050);
             Controls.Add(pictureBox2);
             Controls.Add(panel5);
             Controls.Add(panel4);
@@ -282,7 +282,7 @@
             Controls.Add(panel3);
             Controls.Add(flowLayoutPanel1);
             DoubleBuffered = true;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "KatalogCustomer";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "KatalogCustomer";

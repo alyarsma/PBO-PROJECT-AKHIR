@@ -26,31 +26,27 @@ namespace PBO_PROJECT_AKHIR.Views.User
         }
         private void InitializeCartLabels()
         {
-            // Inisialisasi lblKeranjang
+
             lblKeranjang = new Label();
             lblKeranjang.Name = "lblKeranjang";
             lblKeranjang.Text = "0";
             lblKeranjang.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblKeranjang.ForeColor = Color.Black;
             lblKeranjang.Size = new Size(248, 25);
-            lblKeranjang.Location = new Point(57, 19); // Sesuaikan dengan layout form
+            lblKeranjang.Location = new Point(57, 19); 
             lblKeranjang.TextAlign = ContentAlignment.MiddleLeft;
 
-            // Inisialisasi lblSubtotal
             lblSubtotal = new Label();
             lblSubtotal.Name = "lblSubtotal";
             lblSubtotal.Text = "Rp0";
             lblSubtotal.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblSubtotal.ForeColor = Color.Black;
             lblSubtotal.Size = new Size(114, 25);
-            lblSubtotal.Location = new Point(1020, 12); // Sesuaikan dengan layout form
+            lblSubtotal.Location = new Point(1020, 12);
             lblSubtotal.TextAlign = ContentAlignment.MiddleLeft;
 
-            // Tambahkan ke form
             panel3.Controls.Add(lblKeranjang);
             panel3.Controls.Add(lblSubtotal);
-
-            // Atau jika sudah ada di designer, cari kontrol yang sudah ada
 
         }
 
@@ -138,17 +134,15 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 jumlahDipilih++;
                 product.Stock--;
 
-                // Update UI panel
+             
                 jmlhProduk.Text = jumlahDipilih.ToString();
                 stokProduk.Text = $"Stok: {product.Stock}";
 
-                // update label keranjang
                 int totalKeranjang;
                 if (!int.TryParse(labelKeranjang.Text, out totalKeranjang)) totalKeranjang = 0;
                 totalKeranjang++;
                 labelKeranjang.Text = totalKeranjang.ToString();
 
-                // update subtotal
                 int subtotal;
                 if (!int.TryParse(labelSubtotal.Text, out subtotal)) subtotal = 0;
                 subtotal += product.Price;
@@ -173,25 +167,23 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 jumlahDipilih--;
                 product.Stock++;
 
-                // Update UI panel
                 jmlhProduk.Text = jumlahDipilih.ToString();
                 stokProduk.Text = $"Stok: {product.Stock}";
 
-                // Update label keranjang
+           
                 int totalKeranjang;
                 if (!int.TryParse(labelKeranjang.Text, out totalKeranjang)) totalKeranjang = 0;
                 totalKeranjang--;
                 labelKeranjang.Text = totalKeranjang <= 0 ? "Tidak ada produk yang dipilih" : totalKeranjang.ToString();
 
-                // Update subtotal
                 int subtotal;
                 if (!int.TryParse(labelSubtotal.Text, out subtotal)) subtotal = 0;
                 subtotal -= product.Price;
-                if (subtotal < 0) subtotal = 0; // supaya subtotal tidak negatif
+                if (subtotal < 0) subtotal = 0; 
                 labelSubtotal.Text = subtotal.ToString();
             };
 
-            // tambahkan controls ke panel produk
+         
             panel.Controls.Add(displayProduct);
             panel.Controls.Add(namaProduk);
             panel.Controls.Add(hargaProduk);
@@ -211,8 +203,7 @@ namespace PBO_PROJECT_AKHIR.Views.User
 
             foreach (Product product in products)
             {
-                // Jika belum ada order untuk user saat ini, bisa bikin dummy atau ambil order dari controller
-                Orders order = orderController.GetCurrentOrder(); // contoh, ganti sesuai implementasimu
+                Orders order = orderController.GetCurrentOrder(); 
 
                 Panel panelProduk = CreateProductPanel(product, order, lblKeranjang, lblSubtotal);
                 flowLayoutPanel1.Controls.Add(panelProduk);

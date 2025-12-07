@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             lbregister = new Label();
             lblogin = new Label();
             tbpassword = new TextBox();
@@ -41,10 +40,10 @@
             lbregister.BackColor = Color.Navy;
             lbregister.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbregister.ForeColor = Color.Transparent;
-            lbregister.Location = new Point(1037, 725);
+            lbregister.Location = new Point(1296, 906);
             lbregister.Margin = new Padding(2, 0, 2, 0);
             lbregister.Name = "lbregister";
-            lbregister.Size = new Size(124, 31);
+            lbregister.Size = new Size(142, 37);
             lbregister.TabIndex = 3;
             lbregister.Text = "Register";
             lbregister.Click += lbregister_Click;
@@ -55,10 +54,10 @@
             lblogin.BackColor = Color.Navy;
             lblogin.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblogin.ForeColor = Color.Transparent;
-            lblogin.Location = new Point(1055, 548);
+            lblogin.Location = new Point(1319, 685);
             lblogin.Margin = new Padding(2, 0, 2, 0);
             lblogin.Name = "lblogin";
-            lblogin.Size = new Size(85, 31);
+            lblogin.Size = new Size(101, 37);
             lblogin.TabIndex = 2;
             lblogin.Text = "Login";
             lblogin.Click += lblogin_Click;
@@ -66,35 +65,35 @@
             // tbpassword
             // 
             tbpassword.BorderStyle = BorderStyle.None;
-            tbpassword.Location = new Point(894, 449);
-            tbpassword.Margin = new Padding(2, 3, 2, 3);
+            tbpassword.Location = new Point(1118, 561);
+            tbpassword.Margin = new Padding(2, 4, 2, 4);
             tbpassword.Name = "tbpassword";
-            tbpassword.Size = new Size(325, 20);
+            tbpassword.Size = new Size(406, 24);
             tbpassword.TabIndex = 1;
             tbpassword.TextChanged += tbpassword_TextChanged;
             // 
             // tbusername
             // 
             tbusername.BorderStyle = BorderStyle.None;
-            tbusername.Location = new Point(894, 343);
-            tbusername.Margin = new Padding(2, 3, 2, 3);
+            tbusername.Location = new Point(1118, 429);
+            tbusername.Margin = new Padding(2, 4, 2, 4);
             tbusername.Name = "tbusername";
-            tbusername.Size = new Size(325, 20);
+            tbusername.Size = new Size(406, 24);
             tbusername.TabIndex = 0;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.HalLogin_Customer__3_;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1471, 840);
+            ClientSize = new Size(1839, 1050);
             Controls.Add(tbpassword);
             Controls.Add(lblogin);
             Controls.Add(tbusername);
             Controls.Add(lbregister);
             DoubleBuffered = true;
-            Margin = new Padding(2, 3, 2, 3);
+            Margin = new Padding(2, 4, 2, 4);
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";

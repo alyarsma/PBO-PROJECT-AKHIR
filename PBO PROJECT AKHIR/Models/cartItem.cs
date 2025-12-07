@@ -10,5 +10,8 @@ namespace PBO_PROJECT_AKHIR.Models
     {
         public Product Product { get; set; }
         public int jumlah_item { get; set; }
+
+        public decimal Subtotal => Product.Price * jumlah_item;
+
     }
 }

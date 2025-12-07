@@ -49,6 +49,8 @@ namespace PBO_PROJECT_AKHIR.Controllers
                                     Password = read.GetString(3)
                                 };
 
+                                AppSession.CurrentUser = LoggedInuser;
+
                                 return LoggedInuser;
                             }
 
