@@ -10,21 +10,24 @@ namespace PBO_PROJECT_AKHIR.Models
     public class Orders
     {
         public int OrderId { get; set; }
+        public int UserId { get; set; }
 
         public string TanggalPesanan { get; set; }
         public int JumlahItem { get; set; }       // total semua item
         public int Subtotal { get; set; }      // total harga semua item
         public StatusPesanan Status { get; set; }
+        public List<OrderItem> Items { get; set; }
+
     }
 
     public enum StatusPesanan
     {
 
-        [Description("Selesai")]
-        Selesai,
+        [Description("selesai")]
+        selesai,
 
-        [Description("Dibatalkan")]
-        Dibatalkan
+        [Description("dibatalkan")]
+        dibatalkan
     }
 
     public class OrderItem

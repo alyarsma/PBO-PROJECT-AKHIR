@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PBO_PROJECT_AKHIR.Controllers
 {
     public class AuthController
@@ -25,43 +26,55 @@ namespace PBO_PROJECT_AKHIR.Controllers
                 using (var conn = new NpgsqlConnection(_dbContext.connStr))
                 {
                     conn.Open();
-                    string query = @"SELECT role, username, email, password FROM users WHERE username = @username AND password = @password LIMIT 1 ";
 
-                    string hashedPassword = PasswordHelper.HashPassword(user.Password);
+                    string query = @"
+                        SELECT user_id, username, email, password, role
+                        FROM users
+                        WHERE username = @username LIMIT 1
+                    ";
 
                     using (var cmd = new NpgsqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@username", user.Username);
-                        cmd.Parameters.AddWithValue("@password", hashedPassword);
 
-                        using (var read = cmd.ExecuteReader())
+                        using (var reader = cmd.ExecuteReader())
                         {
-                            if (read.Read())
+                            if (!reader.Read())
+                                return null; // Username tidak ditemukan
+
+                            // Ambil data database
+                            string storedHash = reader.GetString(reader.GetOrdinal("password"));
+                            string email = reader.GetString(reader.GetOrdinal("email"));
+                            string roleStr = reader.GetString(reader.GetOrdinal("role"));
+
+                            // Hash password input
+                            string hashedInput = PasswordHelper.HashPassword(user.Password);
+
+                            // Cocokkan hash input dengan hash di database
+                            if (hashedInput != storedHash)
+                                return null;
+
+                            // Convert role enum
+                            UserRole roleEnum = Enum.Parse<UserRole>(roleStr);
+
+                            // Kembalikan user terautentikasi
+                            return new UserModel
                             {
-                                string role = read.GetString(0);
-                                UserRole roleEnum = (UserRole)Enum.Parse(typeof(UserRole), role);
-
-                                UserModel LoggedInuser = new UserModel
-                                {
-                                    Role = roleEnum,
-                                    Username = read.GetString(1),
-                                    Email = read.GetString(2),
-                                    Password = read.GetString(3)
-                                };
-
-                                AppSession.CurrentUser = LoggedInuser;
-
-                                return LoggedInuser;
-                            }
-
-                            return null;
+                                UserId = reader.GetInt32(reader.GetOrdinal("user_id")),
+                                Username = reader.GetString(reader.GetOrdinal("username")),
+                                Email = email,
+                                Password = storedHash,
+                                Role = roleEnum
+                            };
                         }
                     }
-
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show($"LOGIN ERROR: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"LOGIN ERROR: {ex.Message}", "Connection Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 return null;
             }
         }

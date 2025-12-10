@@ -40,7 +40,7 @@ namespace PBO_PROJECT_AKHIR.Views
 
                 if (auth != null)
                 {
-                    AppSession.CurrentUser = auth;
+                    AppSession.SetUser(auth);
 
                     MessageBox.Show(
                         $"Login Berhasil. Selamat datang {user.Username}",

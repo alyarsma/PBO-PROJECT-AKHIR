@@ -1,21 +1,16 @@
-﻿using PBO_PROJECT_AKHIR.Database;
+﻿using PBO_PROJECT_AKHIR.Controllers;
 using PBO_PROJECT_AKHIR.Models;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PBO_PROJECT_AKHIR.Views.Admin
 {
     public partial class RiwayatPesanan : Form
     {
-        private DbTransaksi db = new DbTransaksi();
-        private List<transaksi> listTransaksi;
+        private OrderController orderController = new OrderController();
+        private List<Orders> listOrders;
 
         public RiwayatPesanan()
         {
@@ -25,44 +20,33 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
 
         private void LoadRiwayat()
         {
-            listTransaksi = db.GetAllTransaksi();
+            listOrders = orderController.GetAllOrders();
 
-            dataGridView1.DataSource = listTransaksi.Select(x => new
+            var tampilkanDetail = new List<object>();
+
+            foreach (var order in listOrders)
             {
-                x.transaksi_id,
-                x.user_id,
-                x.tanggal_transaksi,
-                x.total_harga,
-                TotalItem = x.DetailTransaksiList.Sum(d => d.jumlah_item)
-            }).ToList();
+                foreach (var item in order.Items)
+                {
+                    tampilkanDetail.Add(new
+                    {
+                        order_id = order.OrderId,
+                        user_id = order.UserId,
+                        tanggal = order.TanggalPesanan,
+                        status = order.Status.ToString(),
+                        jumlah_item = order.JumlahItem,
+                        total_order = order.Subtotal,
 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex < 0) return;
-
-            // Ambil ID transaksi dari grid utama
-            int trxID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["transaksi_id"].Value);
-
-            // Ambil objek transaksi dari list
-            var trx = listTransaksi.FirstOrDefault(x => x.transaksi_id == trxID);
-
-            if (trx == null)
-            {
-                MessageBox.Show("Data transaksi tidak ditemukan.");
-                return;
+                        produk = item.ProductName,
+                        harga_satuan = item.Price,
+                        qty = item.JumlahItem,
+                        subtotal_produk = item.SubTotal
+                    });
+                }
             }
 
-            // Tampilkan detail ke datagrid detail
-            dataGridView1.DataSource = trx.DetailTransaksiList.Select(d => new
-            {
-                Produk = d.product_name,
-                Jumlah = d.jumlah_item,
-                Harga = d.price,
-                Subtotal = d.jumlah_item * d.price
-            }).ToList();
+            dataGridView1.DataSource = tampilkanDetail;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
     }
 }

@@ -44,7 +44,7 @@ namespace PBO_PROJECT_AKHIR.Views.User
             lblSubtotal.Text ="Rp " ;
             lblSubtotal.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblSubtotal.ForeColor = Color.Black;
-            lblSubtotal.Size = new Size(114, 25);
+            lblSubtotal.Size = new Size(200, 25);
             lblSubtotal.Location = new Point(794, 15);
             lblSubtotal.TextAlign = ContentAlignment.MiddleLeft;
 

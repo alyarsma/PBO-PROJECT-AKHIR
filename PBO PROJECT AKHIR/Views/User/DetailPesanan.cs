@@ -9,10 +9,12 @@ namespace PBO_PROJECT_AKHIR.Views.User
 {
     public partial class DetailPesanan : Form
     {
-        // =============== FIELD ==================
+
         private List<OrderItem> _items;
 
-        // =============== CONSTRUCTOR ===============
+        private OrderController _orderController = new OrderController();
+
+
         public DetailPesanan(List<OrderItem> items)
         {
             InitializeComponent();
@@ -20,7 +22,6 @@ namespace PBO_PROJECT_AKHIR.Views.User
             TampilkanProduk();
         }
 
-        // =============== TAMPILKAN PRODUK ===============
         private void TampilkanProduk()
         {
             flowLayoutPanelProduk.Controls.Clear();
@@ -28,35 +29,35 @@ namespace PBO_PROJECT_AKHIR.Views.User
             foreach (var item in _items)
             {
                 Panel baris = new Panel();
-                baris.Height = 190;                     // diperbesar
+                baris.Height = 190;                     
                 baris.Width = flowLayoutPanelProduk.Width - 40;
                 baris.Margin = new Padding(10);
                 baris.BackColor = Color.White;
                 baris.BorderStyle = BorderStyle.FixedSingle;
 
-                int colProduk = 30;     // lokasi gambar + nama
-                int colHarga = 520;     // sejajar dengan "Harga Satuan"
-                int colQty = 700;     // sejajar dengan "Kuantitas"
+                int colProduk = 30;     
+                int colHarga = 520;     
+                int colQty = 700;     
                 int colTotal = 880;
 
-                // ==== GAMBAR PRODUK ====
+
                 PictureBox img = new PictureBox();
                 img.Image = item.Image;
                 img.SizeMode = PictureBoxSizeMode.Zoom;
-                img.Width = 130;                  // diperbesar
+                img.Width = 130;                  
                 img.Height = 130;
                 img.Left = colProduk;
                 img.Top = 25;
 
-                // ==== NAMA PRODUK ====
+
                 Label lblNama = new Label();
                 lblNama.Text = item.ProductName;
-                lblNama.Font = new Font("Poppins", 12, FontStyle.Bold);   // font diperbesar
+                lblNama.Font = new Font("Poppins", 12, FontStyle.Bold);   
                 lblNama.Left = colProduk + 150;
                 lblNama.Top = 75;
                 lblNama.Width = 300;
 
-                // ==== HARGA SATUAN ====
+
                 Label lblHarga = new Label();
                 lblHarga.Text = $"Rp {item.Price:n0}";
                 lblHarga.Font = new Font("Poppins", 11, FontStyle.Regular);
@@ -64,7 +65,6 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 lblHarga.Top = 75;
                 lblHarga.Width = 150;
 
-                // ==== KUANTITAS ====
                 Label lblQty = new Label();
                 lblQty.Text = item.JumlahItem.ToString();
                 lblQty.Font = new Font("Poppins", 11, FontStyle.Regular);
@@ -72,7 +72,6 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 lblQty.Top = 75;
                 lblQty.Width = 80;
 
-                // ==== TOTAL HARGA ====
                 Label lblTotal = new Label();
                 lblTotal.Text = $"Rp {item.SubTotal:n0}";
                 lblTotal.Font = new Font("Poppins", 11, FontStyle.Bold);
@@ -80,7 +79,6 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 lblTotal.Top = 75;
                 lblTotal.Width = 180;
 
-                // ADD CONTROLS
                 baris.Controls.Add(img);
                 baris.Controls.Add(lblNama);
                 baris.Controls.Add(lblHarga);
@@ -93,14 +91,30 @@ namespace PBO_PROJECT_AKHIR.Views.User
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-            "Pesanan anda telah dibuat,\nharap datang ke tempat untuk mengambil pesanan anda.",
-            "Pesanan Berhasil!",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Information
-    );
+            // SIMPAN PESANAN KE DATABASE
+            int orderId = _orderController.CreateOrder(_items);
 
-            // Kembali ke katalog customer
+            if (orderId > 0)
+            {
+                MessageBox.Show(
+                    $"Pesanan anda berhasil dibuat!\nID Pesanan: {orderId}\nSilakan ambil pesanan di tempat.",
+                    "Pesanan Berhasil!",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+            }
+            else
+            {
+                MessageBox.Show(
+                    "Terjadi kesalahan saat membuat pesanan.",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+                return;
+            }
+
+            // KEMBALI KE KATALOG CUSTOMER
             KatalogCustomer katalog = new KatalogCustomer();
             katalog.Show();
             this.Close();
