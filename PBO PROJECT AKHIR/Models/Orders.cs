@@ -22,6 +22,8 @@ namespace PBO_PROJECT_AKHIR.Models
 
     public enum StatusPesanan
     {
+        [Description("pending")]
+        pending,
 
         [Description("selesai")]
         selesai,
@@ -29,6 +31,7 @@ namespace PBO_PROJECT_AKHIR.Models
         [Description("dibatalkan")]
         dibatalkan
     }
+
 
     public class OrderItem
     {

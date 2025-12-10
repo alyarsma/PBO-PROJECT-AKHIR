@@ -24,7 +24,7 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
 
         private void tbRiwayatPesanan_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnTransaksi_Click(object sender, EventArgs e)
@@ -37,6 +37,14 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             RiwayatPesanan riwayatPesanan = new RiwayatPesanan();
             riwayatPesanan.FormClosed += (s, args) => this.Close();
             riwayatPesanan.Show();
+            this.Hide();
+        }
+
+        private void btnPesanan_Click(object sender, EventArgs e)
+        {
+            PesananMasuk pesananMasuk = new PesananMasuk();
+            pesananMasuk.FormClosed += (s, args) => this.Close();
+            pesananMasuk.Show();
             this.Hide();
         }
     }

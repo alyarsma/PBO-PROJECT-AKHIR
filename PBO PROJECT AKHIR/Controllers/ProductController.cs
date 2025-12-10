@@ -116,7 +116,7 @@ namespace PBO_PROJECT_AKHIR.Controllers
                 MessageBox.Show($"Get Product Error: {ex.Message}");
             }
 
-            return products;   // ini yang benar
+            return products;
         }
 
         public void UpdateStock(int productId, int newStock)

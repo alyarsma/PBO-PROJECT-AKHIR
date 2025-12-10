@@ -38,59 +38,75 @@
             // 
             // btnPesanan
             // 
+            btnPesanan.BackColor = Color.Transparent;
+            btnPesanan.FlatAppearance.BorderSize = 0;
+            btnPesanan.FlatStyle = FlatStyle.Flat;
             btnPesanan.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPesanan.Location = new Point(351, 247);
+            btnPesanan.Location = new Point(212, 244);
             btnPesanan.Margin = new Padding(3, 4, 3, 4);
             btnPesanan.Name = "btnPesanan";
-            btnPesanan.Size = new Size(144, 37);
+            btnPesanan.Size = new Size(337, 50);
             btnPesanan.TabIndex = 0;
             btnPesanan.Text = "Pesanan Masuk";
-            btnPesanan.UseVisualStyleBackColor = true;
+            btnPesanan.UseVisualStyleBackColor = false;
+            btnPesanan.Click += btnPesanan_Click;
             // 
             // btnRiwayat
             // 
+            btnRiwayat.BackColor = Color.Transparent;
+            btnRiwayat.FlatAppearance.BorderSize = 0;
+            btnRiwayat.FlatStyle = FlatStyle.Flat;
             btnRiwayat.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRiwayat.Location = new Point(1021, 247);
+            btnRiwayat.Location = new Point(970, 244);
             btnRiwayat.Margin = new Padding(3, 4, 3, 4);
             btnRiwayat.Name = "btnRiwayat";
-            btnRiwayat.Size = new Size(144, 37);
+            btnRiwayat.Size = new Size(335, 50);
             btnRiwayat.TabIndex = 1;
             btnRiwayat.Text = "Riwayat Pesanan";
-            btnRiwayat.UseVisualStyleBackColor = true;
+            btnRiwayat.UseVisualStyleBackColor = false;
             btnRiwayat.Click += btnRiwayat_Click;
             // 
             // btnBeranda
             // 
+            btnBeranda.BackColor = Color.Transparent;
+            btnBeranda.FlatAppearance.BorderSize = 0;
+            btnBeranda.FlatStyle = FlatStyle.Flat;
             btnBeranda.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnBeranda.Location = new Point(462, 136);
+            btnBeranda.Location = new Point(431, 140);
             btnBeranda.Margin = new Padding(3, 4, 3, 4);
             btnBeranda.Name = "btnBeranda";
             btnBeranda.Size = new Size(117, 37);
             btnBeranda.TabIndex = 2;
             btnBeranda.Text = "Beranda";
-            btnBeranda.UseVisualStyleBackColor = true;
+            btnBeranda.UseVisualStyleBackColor = false;
             // 
             // btnKatalog
             // 
+            btnKatalog.BackColor = Color.Transparent;
+            btnKatalog.FlatAppearance.BorderSize = 0;
+            btnKatalog.FlatStyle = FlatStyle.Flat;
             btnKatalog.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnKatalog.Location = new Point(704, 136);
+            btnKatalog.Location = new Point(711, 140);
             btnKatalog.Margin = new Padding(3, 4, 3, 4);
             btnKatalog.Name = "btnKatalog";
             btnKatalog.Size = new Size(117, 37);
             btnKatalog.TabIndex = 3;
             btnKatalog.Text = "Katalog";
-            btnKatalog.UseVisualStyleBackColor = true;
+            btnKatalog.UseVisualStyleBackColor = false;
             // 
             // btnTransaksi
             // 
+            btnTransaksi.BackColor = Color.Transparent;
+            btnTransaksi.FlatAppearance.BorderSize = 0;
+            btnTransaksi.FlatStyle = FlatStyle.Flat;
             btnTransaksi.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnTransaksi.Location = new Point(947, 136);
+            btnTransaksi.Location = new Point(993, 140);
             btnTransaksi.Margin = new Padding(3, 4, 3, 4);
             btnTransaksi.Name = "btnTransaksi";
             btnTransaksi.Size = new Size(113, 37);
             btnTransaksi.TabIndex = 4;
             btnTransaksi.Text = "Transaksi";
-            btnTransaksi.UseVisualStyleBackColor = true;
+            btnTransaksi.UseVisualStyleBackColor = false;
             btnTransaksi.Click += btnTransaksi_Click;
             // 
             // TransaksiAdm

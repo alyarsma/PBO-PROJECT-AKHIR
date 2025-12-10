@@ -89,7 +89,6 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             DialogResult result = MessageBox.Show("Apakah anda yakin ingin mengubah?", "Konfirmasi Edit", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             if (result == DialogResult.OK)
             {
-                //productController.EditProduk(Product);
                 this.productController.EditProduk(Product);
                 MessageBox.Show("Produk berhasil diubah.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();

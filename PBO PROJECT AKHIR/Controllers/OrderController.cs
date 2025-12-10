@@ -66,7 +66,7 @@ namespace PBO_PROJECT_AKHIR.Controllers
                     cmd.Parameters.AddWithValue("@tanggal", DateTime.Now);
                     cmd.Parameters.AddWithValue("@jumlah", totalItem);
                     cmd.Parameters.AddWithValue("@subtotal", totalHarga);
-                    cmd.Parameters.AddWithValue("@status", StatusPesanan.selesai.ToString().ToLower());
+                    cmd.Parameters.AddWithValue("@status", StatusPesanan.pending.ToString().ToLower());
 
                     // 🔥 PARAMETER user_id
                     cmd.Parameters.AddWithValue("@user", AppSession.CurrentUser.UserId);
@@ -195,6 +195,34 @@ namespace PBO_PROJECT_AKHIR.Controllers
             }
 
             return list;
+        }
+
+
+        public bool UpdateOrderStatus(int orderId, StatusPesanan newStatus)
+        {
+            try
+            {
+                using var conn = new NpgsqlConnection(_dbContext.connStr);
+                conn.Open();
+
+                string query = @"
+            UPDATE orders 
+            SET status = @status::status_order
+            WHERE order_id = @id;
+        ";
+
+                using var cmd = new NpgsqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@status", newStatus.ToString().ToLower());
+                cmd.Parameters.AddWithValue("@id", orderId);
+
+                int rows = cmd.ExecuteNonQuery();
+                return rows > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal update status: " + ex.Message);
+                return false;
+            }
         }
 
     }

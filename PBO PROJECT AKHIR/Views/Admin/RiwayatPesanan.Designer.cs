@@ -28,29 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RiwayatPesanan));
             dataGridView1 = new DataGridView();
+            npgsqlDataAdapter1 = new Npgsql.NpgsqlDataAdapter();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
             // 
-            dataGridView1.BackgroundColor = SystemColors.GradientInactiveCaption;
+            dataGridView1.BackgroundColor = Color.White;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.GridColor = SystemColors.GradientInactiveCaption;
-            dataGridView1.Location = new Point(178, 163);
+            dataGridView1.Location = new Point(208, 335);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1103, 623);
+            dataGridView1.Size = new Size(1103, 451);
             dataGridView1.TabIndex = 0;
+            // 
+            // npgsqlDataAdapter1
+            // 
+            npgsqlDataAdapter1.DeleteCommand = null;
+            npgsqlDataAdapter1.InsertCommand = null;
+            npgsqlDataAdapter1.SelectCommand = null;
+            npgsqlDataAdapter1.UpdateCommand = null;
             // 
             // RiwayatPesanan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.RIWAYAT_PESANAN__1_;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1471, 840);
             Controls.Add(dataGridView1);
@@ -66,5 +73,6 @@
         #endregion
 
         private DataGridView dataGridView1;
+        private Npgsql.NpgsqlDataAdapter npgsqlDataAdapter1;
     }
 }
