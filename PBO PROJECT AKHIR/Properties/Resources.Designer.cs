@@ -103,6 +103,26 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap banner_bawah__2_ {
+            get {
+                object obj = ResourceManager.GetObject("banner bawah (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banner_bawah__3_ {
+            get {
+                object obj = ResourceManager.GetObject("banner bawah (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Beranda_admin__2_ {
             get {
                 object obj = ResourceManager.GetObject("Beranda admin (2)", resourceCulture);

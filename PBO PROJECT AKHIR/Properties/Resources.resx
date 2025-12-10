@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Beranda customer (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Beranda customer (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fa6-solid--trash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fa6-solid--trash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -148,8 +145,8 @@
   <data name="banner bawah" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banner bawah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Beranda admin (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Beranda admin (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mingcute--pencil-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mingcute--pencil-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="image 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,11 +160,17 @@
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="banner bawah (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner bawah (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pepicons-pencil--plus-circle (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pepicons-pencil--plus-circle (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="form tambah produk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form tambah produk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beranda admin (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beranda admin (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DETAIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DETAIL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,8 +178,8 @@
   <data name="DETAIL (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DETAIL (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mingcute--pencil-line" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mingcute--pencil-line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HalLogin Customer (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HalLogin Customer (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BG Katalog admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BG Katalog admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +199,11 @@
   <data name="anggrek bulan putih" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anggrek bulan putih.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KATALOG PRODUK (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KATALOG PRODUK (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Beranda customer (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beranda customer (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DETAIL (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DETAIL (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="banner bawah (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banner bawah (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +229,8 @@
   <data name="Beranda admin (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Beranda admin (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KATALOG PRODUK (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KATALOG PRODUK (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KATALOG PRODUK (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KATALOG PRODUK (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="form tambah produk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form tambah produk1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,13 +247,13 @@
   <data name="PEMBAYARAN BERHASIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PEMBAYARAN BERHASIL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HalLogin Customer (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HalLogin Customer (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KATALOG PRODUK (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KATALOG PRODUK (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KATALOG PRODUK (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KATALOG PRODUK (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DETAIL (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DETAIL (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="banner bawah (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner bawah (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

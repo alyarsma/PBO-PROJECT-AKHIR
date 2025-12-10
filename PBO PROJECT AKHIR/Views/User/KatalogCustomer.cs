@@ -13,9 +13,12 @@ namespace PBO_PROJECT_AKHIR.Views.User
     public partial class KatalogCustomer : Form
     {
         private IProduk productController;
+        private List<Product> productsList = new List<Product>();
         private OrderController orderController;
         private Label lblKeranjang;
         private Label lblSubtotal;
+
+        private int subtotalGlobal = 0;
         public KatalogCustomer()
         {
             InitializeComponent();
@@ -33,16 +36,16 @@ namespace PBO_PROJECT_AKHIR.Views.User
             lblKeranjang.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblKeranjang.ForeColor = Color.Black;
             lblKeranjang.Size = new Size(248, 25);
-            lblKeranjang.Location = new Point(57, 19); 
+            lblKeranjang.Location = new Point(57, 19);
             lblKeranjang.TextAlign = ContentAlignment.MiddleLeft;
 
             lblSubtotal = new Label();
             lblSubtotal.Name = "lblSubtotal";
-            lblSubtotal.Text = "Rp0";
+            lblSubtotal.Text ="Rp " ;
             lblSubtotal.Font = new Font("Poppins", 11, FontStyle.Bold);
             lblSubtotal.ForeColor = Color.Black;
             lblSubtotal.Size = new Size(114, 25);
-            lblSubtotal.Location = new Point(1020, 12);
+            lblSubtotal.Location = new Point(794, 15);
             lblSubtotal.TextAlign = ContentAlignment.MiddleLeft;
 
             panel3.Controls.Add(lblKeranjang);
@@ -51,7 +54,7 @@ namespace PBO_PROJECT_AKHIR.Views.User
         }
 
 
-        public Panel CreateProductPanel(Product product, Orders order, Label labelKeranjang, Label labelSubtotal)
+        public Panel CreateProductPanel(Product product, Label labelKeranjang, Label labelSubtotal)
         {
             int jumlahDipilih = 0;
 
@@ -70,8 +73,8 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 Size = new Size(190, 130),
                 BackColor = Color.Transparent,
                 SizeMode = PictureBoxSizeMode.Zoom,
+                Image = ImageHelper.BinaryToImage(product.Image)
             };
-            displayProduct.Image = ImageHelper.BinaryToImage(product.Image);
 
             Label namaProduk = new Label
             {
@@ -79,8 +82,7 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 Location = new Point(28, 159),
                 Size = new Size(192, 28),
                 BackColor = Color.Transparent,
-                Font = new Font("Poppins", 9, FontStyle.Bold),
-                TextAlign = ContentAlignment.MiddleLeft
+                Font = new Font("Poppins", 9, FontStyle.Bold)
             };
 
             Label hargaProduk = new Label
@@ -90,24 +92,22 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 Size = new Size(126, 28),
                 BackColor = Color.Transparent,
                 ForeColor = Color.Purple,
-                Font = new Font("Poppins", 9, FontStyle.Bold),
-                TextAlign = ContentAlignment.MiddleLeft
+                Font = new Font("Poppins", 9, FontStyle.Bold)
             };
 
             Label stokProduk = new Label
             {
-                Text = product.Stock.ToString(),
+                Text = $"Stok: {product.Stock}",
                 Location = new Point(20, 194),
                 Size = new Size(88, 28),
                 BackColor = Color.Transparent,
                 ForeColor = Color.DarkGray,
-                Font = new Font("Poppins", 8, FontStyle.Regular),
-                TextAlign = ContentAlignment.MiddleLeft
+                Font = new Font("Poppins", 8)
             };
 
             Label jmlhProduk = new Label
             {
-                Text = order.JumlahItem.ToString(),
+                Text = "0", // MULAI DARI 0
                 Location = new Point(120, 246),
                 Size = new Size(25, 31),
                 BackColor = Color.Transparent,
@@ -133,8 +133,9 @@ namespace PBO_PROJECT_AKHIR.Views.User
 
                 jumlahDipilih++;
                 product.Stock--;
+                product.SelectedQty = jumlahDipilih;
 
-             
+
                 jmlhProduk.Text = jumlahDipilih.ToString();
                 stokProduk.Text = $"Stok: {product.Stock}";
 
@@ -143,10 +144,13 @@ namespace PBO_PROJECT_AKHIR.Views.User
                 totalKeranjang++;
                 labelKeranjang.Text = totalKeranjang.ToString();
 
-                int subtotal;
-                if (!int.TryParse(labelSubtotal.Text, out subtotal)) subtotal = 0;
-                subtotal += product.Price;
-                labelSubtotal.Text = subtotal.ToString();
+                //int subtotal;
+                //if (!int.TryParse(labelSubtotal.Text, out subtotal)) subtotal = 0;
+                //subtotal += product.Price;
+                subtotalGlobal += product.Price;
+
+                labelSubtotal.Text = "Rp " + subtotalGlobal.ToString("n0");
+
             };
 
 
@@ -166,24 +170,30 @@ namespace PBO_PROJECT_AKHIR.Views.User
 
                 jumlahDipilih--;
                 product.Stock++;
+                product.SelectedQty = jumlahDipilih;
+
 
                 jmlhProduk.Text = jumlahDipilih.ToString();
                 stokProduk.Text = $"Stok: {product.Stock}";
 
-           
+
                 int totalKeranjang;
                 if (!int.TryParse(labelKeranjang.Text, out totalKeranjang)) totalKeranjang = 0;
                 totalKeranjang--;
                 labelKeranjang.Text = totalKeranjang <= 0 ? "Tidak ada produk yang dipilih" : totalKeranjang.ToString();
 
-                int subtotal;
-                if (!int.TryParse(labelSubtotal.Text, out subtotal)) subtotal = 0;
-                subtotal -= product.Price;
-                if (subtotal < 0) subtotal = 0; 
-                labelSubtotal.Text = subtotal.ToString();
+                //int subtotal;
+                //if (!int.TryParse(labelSubtotal.Text, out subtotal)) subtotal = 0;
+                //subtotal -= product.Price;
+                subtotalGlobal -= product.Price;
+                if (subtotalGlobal < 0) subtotalGlobal = 0;
+
+                labelSubtotal.Text = "Rp " + subtotalGlobal.ToString("n0");
+
+
             };
 
-         
+
             panel.Controls.Add(displayProduct);
             panel.Controls.Add(namaProduk);
             panel.Controls.Add(hargaProduk);
@@ -198,14 +208,11 @@ namespace PBO_PROJECT_AKHIR.Views.User
         public void LoadProducts()
         {
             flowLayoutPanel1.Controls.Clear();
+            productsList = productController.GetAllProduct();
 
-            List<Product> products = productController.GetAllProduct();
-
-            foreach (Product product in products)
+            foreach (Product product in productsList)
             {
-                Orders order = orderController.GetCurrentOrder(); 
-
-                Panel panelProduk = CreateProductPanel(product, order, lblKeranjang, lblSubtotal);
+                Panel panelProduk = CreateProductPanel(product, lblKeranjang, lblSubtotal);
                 flowLayoutPanel1.Controls.Add(panelProduk);
             }
         }
@@ -230,6 +237,40 @@ namespace PBO_PROJECT_AKHIR.Views.User
             profilUser.FormClosed += (s, args) => this.Close();
             profilUser.Show();
             this.Hide();
+        }
+
+        private void btnbuatpesanan_Click(object sender, EventArgs e)
+        {
+            List<OrderItem> orderItems = new List<OrderItem>();
+
+            foreach (var product in productsList)
+            {
+                if (product.SelectedQty > 0)
+                {
+                    orderItems.Add(new OrderItem
+                    {
+                        ProductName = product.ProductName,
+                        Price = product.Price,
+                        JumlahItem = product.SelectedQty,
+                        ImageData = product.Image
+                    });
+                }
+            }
+
+            if (orderItems.Count == 0)
+            {
+                MessageBox.Show("Tidak ada produk yang dipilih.");
+                return;
+            }
+
+            DetailPesanan dp = new DetailPesanan(orderItems);
+            dp.Show();
+            this.Hide();
+        }
+
+        private void btnkurang_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
