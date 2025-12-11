@@ -51,8 +51,8 @@
             btnberandaadmin.BackgroundImageLayout = ImageLayout.Zoom;
             btnberandaadmin.FlatAppearance.BorderSize = 0;
             btnberandaadmin.FlatStyle = FlatStyle.Flat;
-            btnberandaadmin.Font = new Font("Poppins", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnberandaadmin.Location = new Point(498, 181);
+            btnberandaadmin.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnberandaadmin.Location = new Point(372, 141);
             btnberandaadmin.Name = "btnberandaadmin";
             btnberandaadmin.Size = new Size(142, 50);
             btnberandaadmin.TabIndex = 0;
@@ -66,8 +66,8 @@
             btnkatalogadmin.BackgroundImageLayout = ImageLayout.Zoom;
             btnkatalogadmin.FlatAppearance.BorderSize = 0;
             btnkatalogadmin.FlatStyle = FlatStyle.Flat;
-            btnkatalogadmin.Font = new Font("Poppins", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnkatalogadmin.Location = new Point(888, 181);
+            btnkatalogadmin.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnkatalogadmin.Location = new Point(686, 141);
             btnkatalogadmin.Name = "btnkatalogadmin";
             btnkatalogadmin.Size = new Size(142, 50);
             btnkatalogadmin.TabIndex = 1;
@@ -80,8 +80,8 @@
             btntransaksiadmin.BackgroundImageLayout = ImageLayout.Zoom;
             btntransaksiadmin.FlatAppearance.BorderSize = 0;
             btntransaksiadmin.FlatStyle = FlatStyle.Flat;
-            btntransaksiadmin.Font = new Font("Poppins", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btntransaksiadmin.Location = new Point(1283, 181);
+            btntransaksiadmin.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btntransaksiadmin.Location = new Point(1002, 141);
             btntransaksiadmin.Name = "btntransaksiadmin";
             btntransaksiadmin.Size = new Size(149, 50);
             btntransaksiadmin.TabIndex = 2;
@@ -94,9 +94,9 @@
             flowLayoutPanelprodukadmin.AutoScroll = true;
             flowLayoutPanelprodukadmin.BackColor = Color.Transparent;
             flowLayoutPanelprodukadmin.Controls.Add(panelproduk);
-            flowLayoutPanelprodukadmin.Location = new Point(248, 295);
+            flowLayoutPanelprodukadmin.Location = new Point(59, 211);
             flowLayoutPanelprodukadmin.Name = "flowLayoutPanelprodukadmin";
-            flowLayoutPanelprodukadmin.Size = new Size(1429, 738);
+            flowLayoutPanelprodukadmin.Size = new Size(1445, 553);
             flowLayoutPanelprodukadmin.TabIndex = 4;
             // 
             // panelproduk
@@ -118,11 +118,11 @@
             // 
             lblangkastokproduk.AutoSize = true;
             lblangkastokproduk.FlatStyle = FlatStyle.Flat;
-            lblangkastokproduk.Font = new Font("Poppins SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblangkastokproduk.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblangkastokproduk.ForeColor = Color.SlateBlue;
             lblangkastokproduk.Location = new Point(82, 268);
             lblangkastokproduk.Name = "lblangkastokproduk";
-            lblangkastokproduk.Size = new Size(50, 30);
+            lblangkastokproduk.Size = new Size(44, 20);
             lblangkastokproduk.TabIndex = 4;
             lblangkastokproduk.Text = "stok";
             // 
@@ -142,11 +142,11 @@
             // 
             lblstokproduk.AutoSize = true;
             lblstokproduk.FlatStyle = FlatStyle.Flat;
-            lblstokproduk.Font = new Font("Poppins SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblstokproduk.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblstokproduk.ForeColor = Color.SlateBlue;
             lblstokproduk.Location = new Point(26, 268);
             lblstokproduk.Name = "lblstokproduk";
-            lblstokproduk.Size = new Size(59, 30);
+            lblstokproduk.Size = new Size(58, 20);
             lblstokproduk.TabIndex = 3;
             lblstokproduk.Text = "Stok :";
             // 
@@ -154,11 +154,11 @@
             // 
             label1.AutoSize = true;
             label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Poppins SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Indigo;
             label1.Location = new Point(95, 241);
             label1.Name = "label1";
-            label1.Size = new Size(131, 30);
+            label1.Size = new Size(128, 20);
             label1.TabIndex = 2;
             label1.Text = "Rp 100.000,00";
             label1.Click += label1_Click;
@@ -167,11 +167,11 @@
             // 
             lblnamaproduk.AutoSize = true;
             lblnamaproduk.FlatStyle = FlatStyle.Flat;
-            lblnamaproduk.Font = new Font("Poppins SemiBold", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblnamaproduk.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblnamaproduk.ForeColor = Color.Indigo;
             lblnamaproduk.Location = new Point(26, 183);
             lblnamaproduk.Name = "lblnamaproduk";
-            lblnamaproduk.Size = new Size(179, 30);
+            lblnamaproduk.Size = new Size(172, 20);
             lblnamaproduk.TabIndex = 1;
             lblnamaproduk.Text = "Anggrek Bulan Biru";
             // 
@@ -193,9 +193,9 @@
             btntambahproduk.BackgroundImageLayout = ImageLayout.Zoom;
             btntambahproduk.FlatAppearance.BorderSize = 0;
             btntambahproduk.FlatStyle = FlatStyle.Flat;
-            btntambahproduk.Location = new Point(1738, 894);
+            btntambahproduk.Location = new Point(1421, 748);
             btntambahproduk.Name = "btntambahproduk";
-            btntambahproduk.Size = new Size(106, 89);
+            btntambahproduk.Size = new Size(66, 131);
             btntambahproduk.TabIndex = 5;
             btntambahproduk.UseVisualStyleBackColor = false;
             btntambahproduk.Click += btntambahproduk_Click;
@@ -206,16 +206,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.BG_Katalog_admin__1_;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1924, 1055);
-            Controls.Add(btntambahproduk);
+            ClientSize = new Size(1516, 854);
             Controls.Add(flowLayoutPanelprodukadmin);
+            Controls.Add(btntambahproduk);
             Controls.Add(btntransaksiadmin);
             Controls.Add(btnkatalogadmin);
             Controls.Add(btnberandaadmin);
             DoubleBuffered = true;
             Name = "KatalogAAdmin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "KatalogAAdmin";
             flowLayoutPanelprodukadmin.ResumeLayout(false);
             panelproduk.ResumeLayout(false);
             panelproduk.PerformLayout();

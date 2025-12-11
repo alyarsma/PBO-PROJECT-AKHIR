@@ -48,8 +48,8 @@
             btnuploadfoto.BackColor = Color.Transparent;
             btnuploadfoto.FlatAppearance.BorderSize = 0;
             btnuploadfoto.FlatStyle = FlatStyle.Flat;
-            btnuploadfoto.Font = new Font("Poppins", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnuploadfoto.Location = new Point(962, 566);
+            btnuploadfoto.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnuploadfoto.Location = new Point(834, 547);
             btnuploadfoto.Name = "btnuploadfoto";
             btnuploadfoto.Size = new Size(222, 43);
             btnuploadfoto.TabIndex = 0;
@@ -60,28 +60,28 @@
             // tbnamaproduk
             // 
             tbnamaproduk.BorderStyle = BorderStyle.None;
-            tbnamaproduk.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbnamaproduk.Location = new Point(191, 315);
+            tbnamaproduk.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbnamaproduk.Location = new Point(145, 334);
             tbnamaproduk.Name = "tbnamaproduk";
-            tbnamaproduk.Size = new Size(449, 30);
+            tbnamaproduk.Size = new Size(449, 23);
             tbnamaproduk.TabIndex = 1;
             // 
             // tbhargaproduk
             // 
             tbhargaproduk.BorderStyle = BorderStyle.None;
-            tbhargaproduk.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbhargaproduk.Location = new Point(191, 456);
+            tbhargaproduk.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbhargaproduk.Location = new Point(145, 455);
             tbhargaproduk.Name = "tbhargaproduk";
-            tbhargaproduk.Size = new Size(449, 30);
+            tbhargaproduk.Size = new Size(449, 23);
             tbhargaproduk.TabIndex = 2;
             // 
             // tbstokproduk
             // 
             tbstokproduk.BorderStyle = BorderStyle.None;
-            tbstokproduk.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbstokproduk.Location = new Point(191, 594);
+            tbstokproduk.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbstokproduk.Location = new Point(145, 576);
             tbstokproduk.Name = "tbstokproduk";
-            tbstokproduk.Size = new Size(449, 30);
+            tbstokproduk.Size = new Size(449, 23);
             tbstokproduk.TabIndex = 3;
             // 
             // btnsimpanproduk
@@ -89,9 +89,9 @@
             btnsimpanproduk.BackColor = Color.Transparent;
             btnsimpanproduk.FlatAppearance.BorderSize = 0;
             btnsimpanproduk.FlatStyle = FlatStyle.Flat;
-            btnsimpanproduk.Font = new Font("Poppins", 10F);
+            btnsimpanproduk.Font = new Font("Microsoft Sans Serif", 10F);
             btnsimpanproduk.ForeColor = Color.Indigo;
-            btnsimpanproduk.Location = new Point(1109, 632);
+            btnsimpanproduk.Location = new Point(969, 608);
             btnsimpanproduk.Name = "btnsimpanproduk";
             btnsimpanproduk.Size = new Size(96, 34);
             btnsimpanproduk.TabIndex = 4;
@@ -104,9 +104,9 @@
             btnbatalsimpan.BackColor = Color.Transparent;
             btnbatalsimpan.FlatAppearance.BorderSize = 0;
             btnbatalsimpan.FlatStyle = FlatStyle.Flat;
-            btnbatalsimpan.Font = new Font("Poppins", 10.3F);
+            btnbatalsimpan.Font = new Font("Microsoft Sans Serif", 10.3F);
             btnbatalsimpan.ForeColor = Color.White;
-            btnbatalsimpan.Location = new Point(936, 631);
+            btnbatalsimpan.Location = new Point(816, 608);
             btnbatalsimpan.Name = "btnbatalsimpan";
             btnbatalsimpan.Size = new Size(96, 34);
             btnbatalsimpan.TabIndex = 5;
@@ -118,7 +118,7 @@
             // 
             pbgambarproduk.BackColor = Color.Transparent;
             pbgambarproduk.BackgroundImageLayout = ImageLayout.Zoom;
-            pbgambarproduk.Location = new Point(965, 318);
+            pbgambarproduk.Location = new Point(833, 320);
             pbgambarproduk.Name = "pbgambarproduk";
             pbgambarproduk.Size = new Size(210, 160);
             pbgambarproduk.TabIndex = 6;
@@ -130,7 +130,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.form_tambah_produk__1_1;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1372, 902);
+            ClientSize = new Size(1200, 902);
             Controls.Add(pbgambarproduk);
             Controls.Add(btnbatalsimpan);
             Controls.Add(btnsimpanproduk);

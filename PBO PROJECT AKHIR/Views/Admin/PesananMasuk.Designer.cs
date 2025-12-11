@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             dataGridPesanan = new DataGridView();
+            label1 = new Label();
+            btnKatalog = new Label();
+            label3 = new Label();
+            lblRiwayatPesanan = new Label();
+            lblPesananMasuk = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridPesanan).BeginInit();
             SuspendLayout();
             // 
@@ -42,24 +47,99 @@
             dataGridPesanan.Size = new Size(1103, 451);
             dataGridPesanan.TabIndex = 0;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Gray;
+            label1.Location = new Point(437, 142);
+            label1.Name = "label1";
+            label1.Size = new Size(110, 36);
+            label1.TabIndex = 1;
+            label1.Text = "Beranda";
+            label1.Click += label1_Click;
+            // 
+            // btnKatalog
+            // 
+            btnKatalog.AutoSize = true;
+            btnKatalog.BackColor = Color.Transparent;
+            btnKatalog.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKatalog.ForeColor = Color.Gray;
+            btnKatalog.Location = new Point(719, 142);
+            btnKatalog.Name = "btnKatalog";
+            btnKatalog.Size = new Size(102, 36);
+            btnKatalog.TabIndex = 2;
+            btnKatalog.Text = "Katalog";
+            btnKatalog.Click += btnKatalog_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(988, 142);
+            label3.Name = "label3";
+            label3.Size = new Size(122, 36);
+            label3.TabIndex = 3;
+            label3.Text = "Transaksi";
+            // 
+            // lblRiwayatPesanan
+            // 
+            lblRiwayatPesanan.AutoSize = true;
+            lblRiwayatPesanan.BackColor = Color.Transparent;
+            lblRiwayatPesanan.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRiwayatPesanan.ForeColor = Color.Gray;
+            lblRiwayatPesanan.Location = new Point(1041, 251);
+            lblRiwayatPesanan.Name = "lblRiwayatPesanan";
+            lblRiwayatPesanan.Size = new Size(206, 36);
+            lblRiwayatPesanan.TabIndex = 4;
+            lblRiwayatPesanan.Text = "Riwayat Pesanan";
+            lblRiwayatPesanan.Click += lblRiwayatPesanan_Click;
+            // 
+            // lblPesananMasuk
+            // 
+            lblPesananMasuk.AutoSize = true;
+            lblPesananMasuk.BackColor = Color.Transparent;
+            lblPesananMasuk.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPesananMasuk.ForeColor = Color.Black;
+            lblPesananMasuk.Location = new Point(283, 252);
+            lblPesananMasuk.Name = "lblPesananMasuk";
+            lblPesananMasuk.Size = new Size(189, 36);
+            lblPesananMasuk.TabIndex = 5;
+            lblPesananMasuk.Text = "Pesanan Masuk\r\n";
+            lblPesananMasuk.Click += lblPesananMasuk_Click;
+            // 
             // PesananMasuk
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.RIWAYAT_PESANAN__1_;
+            BackgroundImage = Properties.Resources.RIWAYAT_PESANAN__1_1;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1471, 840);
+            Controls.Add(lblPesananMasuk);
+            Controls.Add(lblRiwayatPesanan);
+            Controls.Add(label3);
+            Controls.Add(btnKatalog);
+            Controls.Add(label1);
             Controls.Add(dataGridPesanan);
             DoubleBuffered = true;
             Name = "PesananMasuk";
             Text = "PesananMasuk";
             ((System.ComponentModel.ISupportInitialize)dataGridPesanan).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private FlowLayoutPanel flowLayoutPanel1;
         private DataGridView dataGridPesanan;
+        private Label label1;
+        private Label btnKatalog;
+        private Label label3;
+        private Label lblRiwayatPesanan;
+        private Label lblPesananMasuk;
     }
 }

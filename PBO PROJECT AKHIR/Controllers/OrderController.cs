@@ -92,7 +92,6 @@ namespace PBO_PROJECT_AKHIR.Controllers
                     cmdItem.Parameters.AddWithValue("@jumlah_item", item.JumlahItem);
                     cmdItem.Parameters.AddWithValue("@subtotal", item.SubTotal);
 
-                    // 🔥 Tambahkan image_data di sini
                     cmdItem.Parameters.AddWithValue("@image_data",
                         item.ImageData ?? (object)DBNull.Value);
 

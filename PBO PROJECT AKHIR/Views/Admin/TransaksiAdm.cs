@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PBO_PROJECT_AKHIR.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,6 +46,22 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             PesananMasuk pesananMasuk = new PesananMasuk();
             pesananMasuk.FormClosed += (s, args) => this.Close();
             pesananMasuk.Show();
+            this.Hide();
+        }
+
+        private void btnKatalog_Click(object sender, EventArgs e)
+        {
+            KatalogAAdmin katalogAAdmin = new KatalogAAdmin(new ProductController());
+            katalogAAdmin.FormClosed += (s, args) => this.Close();
+            katalogAAdmin.Show();
+            this.Hide();
+        }
+
+        private void btnBeranda_Click(object sender, EventArgs e)
+        {
+            BerandaAdmin berandaAdmin = new BerandaAdmin();
+            berandaAdmin.FormClosed += (s, args) => this.Close();
+            berandaAdmin.Show();
             this.Hide();
         }
     }

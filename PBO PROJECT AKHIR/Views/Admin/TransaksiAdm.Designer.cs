@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransaksiAdm));
             btnPesanan = new Button();
             btnRiwayat = new Button();
             btnBeranda = new Button();
@@ -41,8 +40,8 @@
             btnPesanan.BackColor = Color.Transparent;
             btnPesanan.FlatAppearance.BorderSize = 0;
             btnPesanan.FlatStyle = FlatStyle.Flat;
-            btnPesanan.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnPesanan.Location = new Point(212, 244);
+            btnPesanan.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPesanan.Location = new Point(212, 246);
             btnPesanan.Margin = new Padding(3, 4, 3, 4);
             btnPesanan.Name = "btnPesanan";
             btnPesanan.Size = new Size(337, 50);
@@ -56,8 +55,8 @@
             btnRiwayat.BackColor = Color.Transparent;
             btnRiwayat.FlatAppearance.BorderSize = 0;
             btnRiwayat.FlatStyle = FlatStyle.Flat;
-            btnRiwayat.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRiwayat.Location = new Point(970, 244);
+            btnRiwayat.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRiwayat.Location = new Point(970, 246);
             btnRiwayat.Margin = new Padding(3, 4, 3, 4);
             btnRiwayat.Name = "btnRiwayat";
             btnRiwayat.Size = new Size(335, 50);
@@ -71,21 +70,24 @@
             btnBeranda.BackColor = Color.Transparent;
             btnBeranda.FlatAppearance.BorderSize = 0;
             btnBeranda.FlatStyle = FlatStyle.Flat;
-            btnBeranda.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnBeranda.Location = new Point(431, 140);
+            btnBeranda.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBeranda.ForeColor = Color.Gray;
+            btnBeranda.Location = new Point(424, 140);
             btnBeranda.Margin = new Padding(3, 4, 3, 4);
             btnBeranda.Name = "btnBeranda";
-            btnBeranda.Size = new Size(117, 37);
+            btnBeranda.Size = new Size(134, 37);
             btnBeranda.TabIndex = 2;
             btnBeranda.Text = "Beranda";
             btnBeranda.UseVisualStyleBackColor = false;
+            btnBeranda.Click += btnBeranda_Click;
             // 
             // btnKatalog
             // 
             btnKatalog.BackColor = Color.Transparent;
             btnKatalog.FlatAppearance.BorderSize = 0;
             btnKatalog.FlatStyle = FlatStyle.Flat;
-            btnKatalog.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnKatalog.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnKatalog.ForeColor = Color.Gray;
             btnKatalog.Location = new Point(711, 140);
             btnKatalog.Margin = new Padding(3, 4, 3, 4);
             btnKatalog.Name = "btnKatalog";
@@ -93,17 +95,18 @@
             btnKatalog.TabIndex = 3;
             btnKatalog.Text = "Katalog";
             btnKatalog.UseVisualStyleBackColor = false;
+            btnKatalog.Click += btnKatalog_Click;
             // 
             // btnTransaksi
             // 
             btnTransaksi.BackColor = Color.Transparent;
             btnTransaksi.FlatAppearance.BorderSize = 0;
             btnTransaksi.FlatStyle = FlatStyle.Flat;
-            btnTransaksi.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnTransaksi.Location = new Point(993, 140);
+            btnTransaksi.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTransaksi.Location = new Point(983, 140);
             btnTransaksi.Margin = new Padding(3, 4, 3, 4);
             btnTransaksi.Name = "btnTransaksi";
-            btnTransaksi.Size = new Size(113, 37);
+            btnTransaksi.Size = new Size(136, 37);
             btnTransaksi.TabIndex = 4;
             btnTransaksi.Text = "Transaksi";
             btnTransaksi.UseVisualStyleBackColor = false;
@@ -113,7 +116,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.RIWAYAT_PESANAN__1_1;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1471, 840);
             Controls.Add(btnTransaksi);

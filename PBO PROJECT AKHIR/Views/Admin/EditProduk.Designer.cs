@@ -43,7 +43,7 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Location = new Point(965, 318);
+            pictureBox1.Location = new Point(839, 327);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(210, 160);
             pictureBox1.TabIndex = 0;
@@ -54,30 +54,30 @@
             // 
             tbeditnamaproduk.BackColor = Color.White;
             tbeditnamaproduk.BorderStyle = BorderStyle.None;
-            tbeditnamaproduk.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbeditnamaproduk.Location = new Point(191, 315);
+            tbeditnamaproduk.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbeditnamaproduk.Location = new Point(148, 336);
             tbeditnamaproduk.Name = "tbeditnamaproduk";
-            tbeditnamaproduk.Size = new Size(442, 30);
+            tbeditnamaproduk.Size = new Size(442, 23);
             tbeditnamaproduk.TabIndex = 1;
             // 
             // tbedithargaproduk
             // 
             tbedithargaproduk.BackColor = Color.White;
             tbedithargaproduk.BorderStyle = BorderStyle.None;
-            tbedithargaproduk.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbedithargaproduk.Location = new Point(191, 456);
+            tbedithargaproduk.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbedithargaproduk.Location = new Point(148, 455);
             tbedithargaproduk.Name = "tbedithargaproduk";
-            tbedithargaproduk.Size = new Size(442, 30);
+            tbedithargaproduk.Size = new Size(442, 23);
             tbedithargaproduk.TabIndex = 2;
             // 
             // tbeditstokproduk
             // 
             tbeditstokproduk.BackColor = Color.White;
             tbeditstokproduk.BorderStyle = BorderStyle.None;
-            tbeditstokproduk.Font = new Font("Poppins", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbeditstokproduk.Location = new Point(191, 594);
+            tbeditstokproduk.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbeditstokproduk.Location = new Point(148, 576);
             tbeditstokproduk.Name = "tbeditstokproduk";
-            tbeditstokproduk.Size = new Size(442, 30);
+            tbeditstokproduk.Size = new Size(442, 23);
             tbeditstokproduk.TabIndex = 3;
             // 
             // btnupfotobaru
@@ -85,8 +85,8 @@
             btnupfotobaru.BackColor = Color.Transparent;
             btnupfotobaru.FlatAppearance.BorderSize = 0;
             btnupfotobaru.FlatStyle = FlatStyle.Flat;
-            btnupfotobaru.Font = new Font("Poppins", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnupfotobaru.Location = new Point(962, 566);
+            btnupfotobaru.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnupfotobaru.Location = new Point(836, 549);
             btnupfotobaru.Name = "btnupfotobaru";
             btnupfotobaru.Size = new Size(219, 43);
             btnupfotobaru.TabIndex = 4;
@@ -99,9 +99,9 @@
             btnbataledit.BackColor = Color.Transparent;
             btnbataledit.FlatAppearance.BorderSize = 0;
             btnbataledit.FlatStyle = FlatStyle.Flat;
-            btnbataledit.Font = new Font("Poppins", 10.3F);
+            btnbataledit.Font = new Font("Microsoft Sans Serif", 10.3F);
             btnbataledit.ForeColor = Color.White;
-            btnbataledit.Location = new Point(941, 632);
+            btnbataledit.Location = new Point(823, 606);
             btnbataledit.Name = "btnbataledit";
             btnbataledit.Size = new Size(86, 35);
             btnbataledit.TabIndex = 5;
@@ -114,9 +114,9 @@
             btnsimpanedit.BackColor = Color.Transparent;
             btnsimpanedit.FlatAppearance.BorderSize = 0;
             btnsimpanedit.FlatStyle = FlatStyle.Flat;
-            btnsimpanedit.Font = new Font("Poppins", 10.3F);
+            btnsimpanedit.Font = new Font("Microsoft Sans Serif", 10.3F);
             btnsimpanedit.ForeColor = Color.Indigo;
-            btnsimpanedit.Location = new Point(1105, 632);
+            btnsimpanedit.Location = new Point(965, 606);
             btnsimpanedit.Name = "btnsimpanedit";
             btnsimpanedit.Size = new Size(102, 35);
             btnsimpanedit.TabIndex = 6;
@@ -129,7 +129,7 @@
             pbhapusProduk.BackColor = Color.Transparent;
             pbhapusProduk.BackgroundImage = Properties.Resources.fa6_solid__trash;
             pbhapusProduk.BackgroundImageLayout = ImageLayout.Zoom;
-            pbhapusProduk.Location = new Point(1146, 713);
+            pbhapusProduk.Location = new Point(1013, 694);
             pbhapusProduk.Name = "pbhapusProduk";
             pbhapusProduk.Size = new Size(65, 65);
             pbhapusProduk.TabIndex = 7;
@@ -142,7 +142,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.form_edit_produk1;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1372, 902);
+            ClientSize = new Size(1200, 902);
             Controls.Add(pbhapusProduk);
             Controls.Add(btnsimpanedit);
             Controls.Add(btnbataledit);

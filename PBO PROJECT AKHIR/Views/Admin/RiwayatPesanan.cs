@@ -48,5 +48,37 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             dataGridView1.DataSource = tampilkanDetail;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
+        private void btnKatalog_Click(object sender, EventArgs e)
+        {
+            KatalogAAdmin katalogAAdmin = new KatalogAAdmin(new ProductController());
+            katalogAAdmin.FormClosed += (s, args) => this.Close();
+            katalogAAdmin.Show();
+            this.Hide();
+        }
+
+        private void btnBeranda_Click(object sender, EventArgs e)
+        {
+            BerandaAdmin berandaAdmin = new BerandaAdmin();
+            berandaAdmin.FormClosed += (s, args) => this.Close();
+            berandaAdmin.Show();
+            this.Hide();
+        }
+
+        private void lblPesananMasuk_Click(object sender, EventArgs e)
+        {
+            PesananMasuk pesananMasuk = new PesananMasuk();
+            pesananMasuk.FormClosed += (s, args) => this.Close();
+            pesananMasuk.Show();
+            this.Hide();
+        }
+
+        private void lblRiwayatPesanan_Click(object sender, EventArgs e)
+        {
+            RiwayatPesanan riwayatPesanan = new RiwayatPesanan();
+            riwayatPesanan.FormClosed += (s, args) => this.Close();
+            riwayatPesanan.Show();
+            this.Hide();
+        }
     }
 }
