@@ -72,44 +72,44 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Poppins Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(480, 36);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(155, 36);
+            label4.Size = new Size(133, 25);
             label4.TabIndex = 3;
             label4.Text = "Harga Satuan";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Poppins Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.Location = new Point(678, 36);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(109, 36);
+            label3.Size = new Size(94, 25);
             label3.TabIndex = 2;
             label3.Text = "Kuantitas";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Poppins Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.Location = new Point(898, 36);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(132, 36);
+            label2.Size = new Size(114, 25);
             label2.TabIndex = 1;
             label2.Text = "Total Harga";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Poppins Light", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(118, 36);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(83, 36);
+            label1.Size = new Size(74, 25);
             label1.TabIndex = 0;
             label1.Text = "Produk";
             // 
@@ -138,17 +138,17 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Poppins Medium", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(508, 35);
             label5.Name = "label5";
-            label5.Size = new Size(463, 36);
+            label5.Size = new Size(392, 25);
             label5.TabIndex = 2;
             label5.Text = "Apakah anda yakin membuat pesanan?";
             // 
             // btnbatal
             // 
             btnbatal.BackColor = Color.Gray;
-            btnbatal.Font = new Font("Poppins Medium", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnbatal.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnbatal.ForeColor = Color.White;
             btnbatal.Location = new Point(995, 28);
             btnbatal.Name = "btnbatal";
@@ -161,7 +161,7 @@
             // button1
             // 
             button1.BackColor = Color.Indigo;
-            button1.Font = new Font("Poppins Medium", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
             button1.Location = new Point(1202, 28);
             button1.Name = "button1";
@@ -185,6 +185,7 @@
             DoubleBuffered = true;
             Margin = new Padding(2);
             Name = "DetailPesanan";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DetailPesanan";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
