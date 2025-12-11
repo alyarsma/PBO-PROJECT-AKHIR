@@ -43,8 +43,6 @@
             btnbuatpesanan = new Button();
             label1 = new Label();
             panel4 = new Panel();
-            panel5 = new Panel();
-            label5 = new Label();
             pictureBox2 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel1.SuspendLayout();
@@ -52,7 +50,6 @@
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -171,7 +168,7 @@
             // 
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(label6);
-            panel2.Location = new Point(622, 170);
+            panel2.Location = new Point(762, 166);
             panel2.Margin = new Padding(2);
             panel2.Name = "panel2";
             panel2.Size = new Size(107, 38);
@@ -181,7 +178,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(0, 4);
+            label6.Location = new Point(0, 5);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(113, 31);
@@ -217,7 +214,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DimGray;
-            label1.Location = new Point(5, 10);
+            label1.Location = new Point(3, 6);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(111, 29);
@@ -229,38 +226,16 @@
             // 
             panel4.BackColor = Color.Transparent;
             panel4.Controls.Add(label1);
-            panel4.Location = new Point(333, 164);
+            panel4.Location = new Point(479, 165);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
             panel4.Size = new Size(114, 44);
             panel4.TabIndex = 2;
             // 
-            // panel5
-            // 
-            panel5.BackColor = Color.Transparent;
-            panel5.Controls.Add(label5);
-            panel5.Location = new Point(902, 166);
-            panel5.Margin = new Padding(2);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(116, 42);
-            panel5.TabIndex = 3;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.DimGray;
-            label5.Location = new Point(2, 8);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(127, 29);
-            label5.TabIndex = 2;
-            label5.Text = "Transaksi";
-            // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = Properties.Resources.user;
+            pictureBox2.BackgroundImage = Properties.Resources.bi__person_circle;
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.Location = new Point(1230, 58);
             pictureBox2.Margin = new Padding(2);
@@ -274,11 +249,10 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.KATALOG_PRODUK__5_;
+            BackgroundImage = Properties.Resources.KATALOG_PRODUK__9_;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1353, 840);
             Controls.Add(pictureBox2);
-            Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(panel3);
@@ -298,8 +272,6 @@
             panel3.ResumeLayout(false);
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
@@ -321,8 +293,6 @@
         private Label label4;
         private Label label1;
         private Panel panel4;
-        private Panel panel5;
-        private Label label5;
         private PictureBox pictureBox2;
     }
 }

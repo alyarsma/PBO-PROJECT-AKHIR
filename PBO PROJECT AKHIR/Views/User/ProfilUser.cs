@@ -1,4 +1,5 @@
 ﻿using PBO_PROJECT_AKHIR.Helpers;
+using PBO_PROJECT_AKHIR.Views.Admin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,8 +46,16 @@ namespace PBO_PROJECT_AKHIR.Views.User
             }
             else
             {
-               
+
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e) //tombol back
+        {
+            BerandaCustomer berandaCustomer = new BerandaCustomer();
+            berandaCustomer.FormClosed += (s, args) => this.Close();
+            berandaCustomer.Show();
+            this.Hide();
         }
     }
 }

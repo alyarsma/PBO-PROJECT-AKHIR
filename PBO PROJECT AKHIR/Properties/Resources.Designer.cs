@@ -143,6 +143,26 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Beranda_admin__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Beranda admin (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Beranda_admin__6_ {
+            get {
+                object obj = ResourceManager.GetObject("Beranda admin (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Beranda_customer {
             get {
                 object obj = ResourceManager.GetObject("Beranda customer", resourceCulture);
@@ -173,9 +193,29 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Beranda_customer__5_ {
+            get {
+                object obj = ResourceManager.GetObject("Beranda customer (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BG_Katalog_admin {
             get {
                 object obj = ResourceManager.GetObject("BG Katalog admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BG_Katalog_admin__1_ {
+            get {
+                object obj = ResourceManager.GetObject("BG Katalog admin (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +453,16 @@ namespace PBO_PROJECT_AKHIR.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap KATALOG_PRODUK__9_ {
+            get {
+                object obj = ResourceManager.GetObject("KATALOG PRODUK (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mingcute__pencil_line {
             get {
                 object obj = ResourceManager.GetObject("mingcute--pencil-line", resourceCulture);
@@ -526,6 +576,16 @@ namespace PBO_PROJECT_AKHIR.Properties {
         internal static System.Drawing.Bitmap user__1_ {
             get {
                 object obj = ResourceManager.GetObject("user (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap weui__back_filled {
+            get {
+                object obj = ResourceManager.GetObject("weui--back-filled", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

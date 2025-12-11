@@ -31,7 +31,6 @@
             btnberandaadmin = new Button();
             btnkatalogadmin = new Button();
             btntransaksiadmin = new Button();
-            btnkeuanganadmin = new Button();
             flowLayoutPanelprodukadmin = new FlowLayoutPanel();
             panelproduk = new Panel();
             lblangkastokproduk = new Label();
@@ -53,7 +52,7 @@
             btnberandaadmin.FlatAppearance.BorderSize = 0;
             btnberandaadmin.FlatStyle = FlatStyle.Flat;
             btnberandaadmin.Font = new Font("Poppins", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnberandaadmin.Location = new Point(301, 181);
+            btnberandaadmin.Location = new Point(498, 181);
             btnberandaadmin.Name = "btnberandaadmin";
             btnberandaadmin.Size = new Size(142, 50);
             btnberandaadmin.TabIndex = 0;
@@ -68,7 +67,7 @@
             btnkatalogadmin.FlatAppearance.BorderSize = 0;
             btnkatalogadmin.FlatStyle = FlatStyle.Flat;
             btnkatalogadmin.Font = new Font("Poppins", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnkatalogadmin.Location = new Point(693, 181);
+            btnkatalogadmin.Location = new Point(888, 181);
             btnkatalogadmin.Name = "btnkatalogadmin";
             btnkatalogadmin.Size = new Size(142, 50);
             btnkatalogadmin.TabIndex = 1;
@@ -82,26 +81,13 @@
             btntransaksiadmin.FlatAppearance.BorderSize = 0;
             btntransaksiadmin.FlatStyle = FlatStyle.Flat;
             btntransaksiadmin.Font = new Font("Poppins", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btntransaksiadmin.Location = new Point(1086, 181);
+            btntransaksiadmin.Location = new Point(1283, 181);
             btntransaksiadmin.Name = "btntransaksiadmin";
             btntransaksiadmin.Size = new Size(149, 50);
             btntransaksiadmin.TabIndex = 2;
             btntransaksiadmin.Text = "Transaksi";
             btntransaksiadmin.UseVisualStyleBackColor = false;
-            // 
-            // btnkeuanganadmin
-            // 
-            btnkeuanganadmin.BackColor = Color.Transparent;
-            btnkeuanganadmin.BackgroundImageLayout = ImageLayout.Zoom;
-            btnkeuanganadmin.FlatAppearance.BorderSize = 0;
-            btnkeuanganadmin.FlatStyle = FlatStyle.Flat;
-            btnkeuanganadmin.Font = new Font("Poppins", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnkeuanganadmin.Location = new Point(1497, 181);
-            btnkeuanganadmin.Name = "btnkeuanganadmin";
-            btnkeuanganadmin.Size = new Size(149, 50);
-            btnkeuanganadmin.TabIndex = 3;
-            btnkeuanganadmin.Text = "Keuangan";
-            btnkeuanganadmin.UseVisualStyleBackColor = false;
+            btntransaksiadmin.Click += btntransaksiadmin_Click;
             // 
             // flowLayoutPanelprodukadmin
             // 
@@ -218,12 +204,11 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.BG_Katalog_admin;
+            BackgroundImage = Properties.Resources.BG_Katalog_admin__1_;
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1924, 1055);
             Controls.Add(btntambahproduk);
             Controls.Add(flowLayoutPanelprodukadmin);
-            Controls.Add(btnkeuanganadmin);
             Controls.Add(btntransaksiadmin);
             Controls.Add(btnkatalogadmin);
             Controls.Add(btnberandaadmin);
@@ -243,7 +228,6 @@
         private Button btnberandaadmin;
         private Button btnkatalogadmin;
         private Button btntransaksiadmin;
-        private Button btnkeuanganadmin;
         private FlowLayoutPanel flowLayoutPanelprodukadmin;
         private Panel panelproduk;
         private PictureBox pbproduk;

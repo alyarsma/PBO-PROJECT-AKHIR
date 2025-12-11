@@ -156,5 +156,13 @@ namespace PBO_PROJECT_AKHIR.Views.Admin
             berandaAdmin.Show();
             this.Hide();
         }
+
+        private void btntransaksiadmin_Click(object sender, EventArgs e)
+        {
+            TransaksiAdm transaksiAdmin = new TransaksiAdm();
+            transaksiAdmin.FormClosed += (s, args) => this.Close();
+            transaksiAdmin.Show();
+            this.Hide();
+        }
     }
 }

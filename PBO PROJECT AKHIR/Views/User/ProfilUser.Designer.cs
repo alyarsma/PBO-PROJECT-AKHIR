@@ -33,41 +33,47 @@
             tbusername = new TextBox();
             label1 = new Label();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // tbpassword
             // 
             tbpassword.BorderStyle = BorderStyle.None;
-            tbpassword.Location = new Point(831, 643);
+            tbpassword.Location = new Point(665, 514);
+            tbpassword.Margin = new Padding(2, 2, 2, 2);
             tbpassword.Name = "tbpassword";
-            tbpassword.Size = new Size(895, 24);
+            tbpassword.Size = new Size(716, 20);
             tbpassword.TabIndex = 0;
             // 
             // tbemail
             // 
             tbemail.BorderStyle = BorderStyle.None;
-            tbemail.Location = new Point(831, 484);
+            tbemail.Location = new Point(665, 387);
+            tbemail.Margin = new Padding(2, 2, 2, 2);
             tbemail.Name = "tbemail";
-            tbemail.Size = new Size(895, 24);
+            tbemail.Size = new Size(716, 20);
             tbemail.TabIndex = 1;
             // 
             // tbusername
             // 
             tbusername.BorderStyle = BorderStyle.None;
-            tbusername.Location = new Point(831, 326);
+            tbusername.Location = new Point(665, 261);
+            tbusername.Margin = new Padding(2, 2, 2, 2);
             tbusername.Name = "tbusername";
-            tbusername.Size = new Size(895, 24);
+            tbusername.Size = new Size(716, 20);
             tbusername.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Poppins Medium", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(17, 0);
+            label1.Location = new Point(14, 0);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(139, 56);
+            label1.Size = new Size(103, 31);
             label1.TabIndex = 3;
             label1.Text = "Logout";
             label1.Click += label1_Click;
@@ -76,18 +82,32 @@
             // 
             panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(134, 446);
+            panel1.Location = new Point(107, 357);
+            panel1.Margin = new Padding(2, 2, 2, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(170, 64);
+            panel1.Size = new Size(136, 51);
             panel1.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources.weui__back_filled;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(107, 31);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(64, 62);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // ProfilUser
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.PROFIL__1_;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1839, 1050);
+            ClientSize = new Size(1471, 840);
+            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Controls.Add(tbusername);
             Controls.Add(tbemail);
@@ -100,6 +120,7 @@
             Load += ProfilUser_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -111,5 +132,6 @@
         private TextBox tbusername;
         private Label label1;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }
